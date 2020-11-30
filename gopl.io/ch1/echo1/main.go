@@ -1,5 +1,6 @@
 package main
 
+// os 包提供了一些函数和变量，以与平台无关的方式和操作系统打交道
 import (
 	"fmt"
 	"os"
