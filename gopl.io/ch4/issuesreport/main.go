@@ -4,8 +4,8 @@ import (
 	"../github"
 	"log"
 	"os"
-	"time"
 	"text/template"
+	"time"
 )
 
 const templ = `{{.TotalCount}} issues:
