@@ -10,7 +10,7 @@ import (
 /**
 时钟服务器,每秒一次向客户端发送当前时间
 go build ./main
-./main & 
+./main &
  */
 func handleConn(conn net.Conn) {
 	defer conn.Close()
