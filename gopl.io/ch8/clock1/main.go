@@ -7,6 +7,11 @@ import (
 	"time"
 )
 
+/**
+时钟服务器,每秒一次向客户端发送当前时间
+go build ./main
+./main & 
+ */
 func handleConn(conn net.Conn) {
 	defer conn.Close()
 	for {
@@ -19,12 +24,14 @@ func handleConn(conn net.Conn) {
 }
 
 func main() {
+	// listen 函数创建一个net.listener对象，，监听连接
 	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	for {
+		// 监听器的accept被阻塞，直到有连接请求进来
 		conn, err := listener.Accept()
 		if err != nil {
 			log.Print(err)
