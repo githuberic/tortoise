@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gopl.io/ch5/links"
+	"tortoise/gopl.io/ch5/links"
 	"log"
 	"os"
 )
