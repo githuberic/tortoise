@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/**
+ 单向通道
+ chan <- int 只能发送
+ <-chan int 只能接收
+ */
 func counter(out chan<- int) {
 	for i := 0; i <= 100; i++ {
 		out <- i
