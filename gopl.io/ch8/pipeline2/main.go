@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/**
+ 通知接收方goroutine所有数据都发送完毕的时候才需要关闭通道。
+ */
 func main() {
 	naturals := make(chan int)
 	squares := make(chan int)
