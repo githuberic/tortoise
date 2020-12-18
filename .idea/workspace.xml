@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ebcc3de-73d3-4451-9b2d-baec7893b57d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gopl.io/ch9/bank3/bank.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gopl.io/ch9/bank4/bank.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Go Test.TestBank in tortoise/gopl.io/ch9/bank2">
+  <component name="RunManager" selected="Go Test.TestBank in tortoise/gopl.io/ch9/bank3">
     <configuration name="TestBank in tortoise/gopl.io/ch9/bank1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="tortoise" />
       <working_directory value="$PROJECT_DIR$/gopl.io/ch9/bank1" />
@@ -65,8 +66,20 @@
       <pattern value="^\QTestBank\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestBank in tortoise/gopl.io/ch9/bank3" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="tortoise" />
+      <working_directory value="$PROJECT_DIR$/gopl.io/ch9/bank3" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="tortoise/gopl.io/ch9/bank3" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestBank\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestBank in tortoise/gopl.io/ch9/bank3" />
         <item itemvalue="Go Test.TestBank in tortoise/gopl.io/ch9/bank2" />
         <item itemvalue="Go Test.TestBank in tortoise/gopl.io/ch9/bank1" />
       </list>
