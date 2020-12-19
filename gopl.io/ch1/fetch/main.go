@@ -7,6 +7,9 @@ import (
 	"os"
 )
 
+/**
+获取一个URL
+ */
 func main() {
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)
