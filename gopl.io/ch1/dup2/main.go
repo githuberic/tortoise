@@ -13,6 +13,11 @@ func countLine(f *os.File, counts map[string]int) {
 	}
 }
 
+/**
+run format
+1:./main ./a.txt
+2: 输入, + control + d(结束信号), 比如 aa \n bb \n cd -> control + d
+ */
 func main() {
 	counts := make(map[string]int)
 	files := os.Args[1:]

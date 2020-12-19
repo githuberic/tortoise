@@ -7,6 +7,9 @@ import (
 	"strings"
 )
 
+/**
+运行：./main ./a.txt
+ */
 func main() {
 	counts := make(map[string]int)
 	for _, filename := range os.Args[1:] {
