@@ -23,7 +23,7 @@ func fetch(url string, ch chan<- string) {
 		return
 	}
 
-	// io.copy函数读取响应内容，写入ioutil.Discard输出流进行丢弃,copy 返回字节数以及任何出现的错误
+	// io.copy函数读取响应内容，写入 ioutil.Discard输出流进行丢弃,copy返回字节数以及任何出现的错误
 	nbytes, err := io.Copy(ioutil.Discard, resp.Body)
 	// 防止资源泄露
 	resp.Body.Close()
