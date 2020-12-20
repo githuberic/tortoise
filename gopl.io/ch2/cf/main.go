@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../tempconv"
+	"tortoise/gopl.io/ch2/tempconv"
 	"fmt"
 	"os"
 	"strconv"
