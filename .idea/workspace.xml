@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd626a27-8ef5-4116-adb4-1374faffce34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopl.io/ch2/pointer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopl.io/ch2/pointer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopl.io/ch2/tempconv0/tempconv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopl.io/ch2/tempconv0/tempconv_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
       <recent name="$PROJECT_DIR$/gopl.io/ch1/dup2" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build tortoise/gopl.io/ch2/pointer">
+  <component name="RunManager" selected="Go Test.Test in tortoise/gopl.io/ch2/tempconv0">
     <configuration name="go build tortoise/gopl.io/ch1/helloworld" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="tortoise" />
       <working_directory value="$PROJECT_DIR$" />
@@ -61,8 +60,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test in tortoise/gopl.io/ch2/tempconv0" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="tortoise" />
+      <working_directory value="$PROJECT_DIR$/gopl.io/ch2/tempconv0" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="tortoise/gopl.io/ch2/tempconv0" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test in tortoise/gopl.io/ch2/tempconv0" />
         <item itemvalue="Go Build.go build tortoise/gopl.io/ch2/pointer" />
         <item itemvalue="Go Build.go build tortoise/gopl.io/ch2/boiling" />
         <item itemvalue="Go Build.go build tortoise/gopl.io/ch1/helloworld" />

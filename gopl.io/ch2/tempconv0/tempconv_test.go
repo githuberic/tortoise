@@ -1,27 +1,11 @@
 package tempconv
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func example_one() {
-	{
-		//!+arith
-		fmt.Printf("%g\n", BoilingC-FreezingC) // "100" °C
-		boilingF := CToF(BoilingC)
-		fmt.Printf("%g\n", boilingF-CToF(FreezingC)) // "180" °F
-		//!-arith
-	}
-	/*
-		//!+arith
-		fmt.Printf("%g\n", boilingF-FreezingC)       // compile error: type mismatch
-		//!-arith
-	*/
-
-	// Output:
-	// 100
-	// 180
-}
-
-func Example_two() {
+func Test(t *testing.T) {
 	//!+printf
 	c := FToC(212.0)
 	fmt.Println(c.String()) // "100°C"
@@ -32,11 +16,9 @@ func Example_two() {
 	fmt.Println(float64(c)) // "100"; does not call String
 	//!-printf
 
-	// Output:
-	// 100°C
-	// 100°C
-	// 100°C
-	// 100°C
-	// 100
-	// 100
+	//!+arith
+	fmt.Printf("%g\n", BoilingC-FreezingC) // "100" °C
+	boilingF := CToF(BoilingC)
+	fmt.Printf("%g\n", boilingF-CToF(FreezingC)) // "180" °F
+	//!-arith
 }
