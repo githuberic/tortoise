@@ -1,10 +1,10 @@
 package main
 
 import (
-	"tortoise/gopl.io/ch2/tempconv"
 	"fmt"
 	"os"
 	"strconv"
+	"tortoise/gopl.io/ch2/tempconv"
 )
 
 func main() {
