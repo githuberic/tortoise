@@ -4,6 +4,7 @@ import "fmt"
 
 func main()  {
 	x := 1
+	// &x(x的地址)获取一个指向整形变量的指针,它的类型是整形指针(*int)
 	p := &x
 	fmt.Println(x)
 	fmt.Println(*p)
