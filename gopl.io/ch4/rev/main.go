@@ -15,7 +15,7 @@ func reverse(arr []int) {
 }
 
 /**
-to do ... outerl
+to do ... outer
  */
 func main() {
 	arr := [...]int{0, 1, 2, 3, 4, 5}
