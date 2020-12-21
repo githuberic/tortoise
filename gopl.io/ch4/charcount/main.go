@@ -17,6 +17,7 @@ func main() {
 	in := bufio.NewReader(os.Stdin)
 	for {
 		r, n, err := in.ReadRune() // returns rune, nbytes, error
+		// 文件结束EOF
 		if err == io.EOF {
 			break
 		}
