@@ -23,4 +23,12 @@ func main() {
 	for _, name := range names {
 		fmt.Printf("%s\t%d\n", name, ages[name])
 	}
+
+	// 判定是否存在
+	age, ok := ages["eric"]
+	if ok {
+		fmt.Printf("bob(age=%d) exist\n", age)
+	} else {
+		fmt.Println("not exist")
+	}
 }
