@@ -22,6 +22,10 @@ func TurnDown(v *Flags)     { *v &^= FlagUp }
 func SetBroadcast(v *Flags) { *v |= FlagBroadcast }
 func IsCast(v Flags) bool   { return v&(FlagBroadcast|FlagMulticast) != 0 }
 
+/**
+to do...
+https://www.cnblogs.com/cq-home/archive/2013/05/26/3100111.html
+ */
 func main()  {
 	fmt.Println(Monday)
 	fmt.Println(Tuesday)

@@ -14,6 +14,9 @@ func reverse(arr []int) {
 	}
 }
 
+/**
+to do ... outerl
+ */
 func main() {
 	arr := [...]int{0, 1, 2, 3, 4, 5}
 	reverse(arr[:])
@@ -22,8 +25,10 @@ func main() {
 	arr1 := []int{0, 1, 2, 3, 4, 5}
 	reverse(arr1[:2])
 	fmt.Println(arr1)
+
 	reverse(arr1[2:])
 	fmt.Println(arr1)
+
 	reverse(arr1)
 	fmt.Println(arr1) // "[2 3 4 5 0 1]"
 
