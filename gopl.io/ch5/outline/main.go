@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"golang.org/x/net/html"
 )
 
 func outline(stack []string, n *html.Node) {

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"golang.org/x/net/html"
 )
 
 func visit(links []string, n *html.Node) []string {

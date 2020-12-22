@@ -1,13 +1,15 @@
 package main
 
 import (
-	"../github"
+	"tortoise/gopl.io/ch4/github"
 	"log"
 	"os"
 	"text/template"
 	"time"
 )
 
+// 代码和格式分离，通过text/template,html/template包里面包含的方法来实现
+// 模板 操作{{...}}
 const templ = `{{.TotalCount}} issues:
 {{range .Items}}----------------------------------------
 Number: {{.Number}}
