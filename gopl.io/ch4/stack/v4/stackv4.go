@@ -100,6 +100,8 @@ func main()  {
 	stack.Push(20)
 	stack.Push(30)
 	stack.Push(40)
+	stack.Push("aa")
+	stack.Push(23.45)
 	fmt.Println("当前Size() = ",stack.Size())
 	stack.Print()
 
