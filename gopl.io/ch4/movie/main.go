@@ -8,7 +8,9 @@ import (
 
 type Movie struct {
 	Title  string
+	// 成员定义标签(field tag)
 	Year   int  `json:"released"`
+	// 如果这个值为空/零值 则不输出这个成员到json中
 	Color  bool `json:"color,omitempty"`
 	Actors []string
 }
@@ -20,7 +22,6 @@ var movies = []Movie{
 		Actors: []string{"Paul Newman"}},
 	{Title: "Bullitt", Year: 1968, Color: true,
 		Actors: []string{"Steve McQueen", "Jacqueline Bisset"}},
-	// ...
 }
 
 func main() {
@@ -43,6 +44,7 @@ func main() {
 		fmt.Printf("%s\n", data)
 		//!-MarshalIndent
 
+		// unmarshal 将json字符串解码为GO数据结构
 		//!+Unmarshal
 		var titles []struct{ Title string }
 		if err := json.Unmarshal(data, &titles); err != nil {
