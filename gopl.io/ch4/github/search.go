@@ -9,6 +9,7 @@ import (
 )
 
 func SearchIssues(terms []string) (*IssuesSearchResult, error) {
+	// QueryEscape 特殊字符处理
 	q := url.QueryEscape(strings.Join(terms, " "))
 	resp, err := http.Get(IssuesURL + "?q=" + q)
 	if err != nil {
@@ -21,6 +22,7 @@ func SearchIssues(terms []string) (*IssuesSearchResult, error) {
 	}
 
 	var result IssuesSearchResult
+	// json.Decoder/Encoder流式解码器
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
 		resp.Body.Close()
 		return nil, err

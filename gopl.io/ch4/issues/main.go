@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"../github"
+	"tortoise/gopl.io/ch4/github"
 	"log"
 	"os"
 )
