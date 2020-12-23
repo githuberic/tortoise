@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"golang.org/x/net/html"
 )
 
 //!+forEachNode
@@ -11,6 +12,7 @@ import (
 // x in the tree rooted at n. Both functions are optional.
 // pre is called before the children are visited (preorder) and
 // post is called after (postorder).
+// pre, post 函数指针
 func forEachNode(n *html.Node, pre, post func(n *html.Node)) {
 	if pre != nil {
 		pre(n)
