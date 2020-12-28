@@ -25,7 +25,7 @@ func TestBank(t *testing.T) {
 	// Wait for both transactions.
 	<-done
 	<-done
-
+	
 	if got, want := bank.Balance(), 300; got != want {
 		t.Errorf("Balance = %d, want %d", got, want)
 	}

@@ -22,5 +22,3 @@ func TestBank(t *testing.T) {
 		t.Errorf("Balance = %d, want %d", got, want)
 	}
 }
-
-

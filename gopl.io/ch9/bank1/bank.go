@@ -1,5 +1,7 @@
 package bank
 
+import "fmt"
+
 var deposits = make(chan int) // send amount to deposit
 var balances = make(chan int) // receive balance
 
@@ -12,7 +14,9 @@ func teller() {
 		select {
 		case amount := <-deposits:
 			balance += amount
+			fmt.Printf("balance add,balance=%d\n", balance)
 		case balances <- balance:
+			fmt.Printf("balance no change,balance=%d\n",balance)
 		}
 	}
 }
@@ -20,4 +24,3 @@ func teller() {
 func init() {
 	go teller() // start the monitor goroutine
 }
-
