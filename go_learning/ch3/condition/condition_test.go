@@ -11,6 +11,7 @@ func TestIfMultiSel(t *testing.T) {
 func TestSwitchMultiCase(t *testing.T) {
 	for i := 0; i < 5; i++ {
 		switch i {
+		// case 支持多个item，把switch当成if语句判定使用
 		case 0, 2:
 			t.Log("Even")
 		case 1, 3:
