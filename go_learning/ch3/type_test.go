@@ -22,3 +22,13 @@ func TestPoint(t *testing.T) {
 	t.Log(a, aPtr)
 	t.Logf("%T %T", a, aPtr)
 }
+
+func TestString(t *testing.T) {
+	var s string
+	t.Log("*" + s + "*") //初始化零值是“”
+	t.Log(len(s))
+	// 是"",空字符，而非 nil
+	if s == "" {
+		t.Log("s is null")
+	}
+}
