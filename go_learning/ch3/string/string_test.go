@@ -24,3 +24,10 @@ func TestString(t *testing.T) {
 	t.Logf("中 unicode %x", c[0])
 	t.Logf("中 UTF8 %x", s)
 }
+
+func TestStringToRune(t *testing.T) {
+	s := "中华人民共和国"
+	for _, c := range s {
+		t.Logf("%[1]c %[1]x", c)
+	}
+}
