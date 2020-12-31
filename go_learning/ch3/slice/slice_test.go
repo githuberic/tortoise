@@ -31,6 +31,7 @@ func TestSliceGrowing(t *testing.T) {
 	}
 }
 
+// 切片共享存储结构， slice 容量可以伸缩，切片不可比较
 func TestSliceShareMemory(t *testing.T) {
 	year := []string{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 		"Oct", "Nov", "Dec"}
@@ -43,12 +44,12 @@ func TestSliceShareMemory(t *testing.T) {
 	t.Log(year)
 }
 
-
 func TestSliceComparing(t *testing.T) {
 	a := []int{1, 2, 3, 4}
 	b := []int{1, 2, 3, 4}
-	// if a == b { //切片只能和nil比较
-	// 	t.Log("equal")
-	// }
+	/*
+	if a == b { //切片只能和nil比较
+		t.Log("equal")
+	}*/
 	t.Log(a, b)
 }
