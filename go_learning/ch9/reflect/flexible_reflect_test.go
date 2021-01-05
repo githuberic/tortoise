@@ -10,6 +10,7 @@ func TestDeepEqual(t *testing.T) {
 	a := map[int]string{1: "one", 2: "two", 3: "three"}
 	b := map[int]string{1: "one", 2: "two", 3: "three"}
 	//t.Log(a == b)
+	// 机构体深度比较
 	t.Log(reflect.DeepEqual(a, b))
 
 	s1 := []int{1, 2, 3}
@@ -45,6 +46,7 @@ func fillBySettings(st interface{}, settings map[string]interface{}) error {
 	if reflect.TypeOf(st).Kind() != reflect.Ptr {
 		return errors.New("the first param should be a pointer to the struct type.")
 	}
+
 	// Elem() 获取指针指向的值
 	if reflect.TypeOf(st).Elem().Kind() != reflect.Struct {
 		return errors.New("the first param should be a pointer to the struct type.")

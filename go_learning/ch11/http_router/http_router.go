@@ -2,8 +2,9 @@ package http_router
 
 import (
 	"fmt"
-	"net/http"
 	"github.com/julienschmidt/httprouter"
+	"log"
+	"net/http"
 )
 
 func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {

@@ -12,21 +12,21 @@ func TestTypeAndValue(t *testing.T) {
 	t.Log(reflect.ValueOf(f).Type())
 }
 
-func CheckType(v interface{}) {
+func CheckType(v interface{})  {
 	t := reflect.TypeOf(v)
 	switch t.Kind() {
-	case reflect.Float32, reflect.Float64:
+	case reflect.Float32,reflect.Float64:
 		fmt.Println("Float")
-	case reflect.Int, reflect.Int32, reflect.Int64:
+	case reflect.Int,reflect.Int32,reflect.Int64:
 		fmt.Println("Integer")
 	default:
-		fmt.Println("Unknown", t)
+		fmt.Println("Unknown")
 	}
 }
 
 func TestBasicType(t *testing.T) {
 	var f float64 = 12
-	CheckType(&f)
+	CheckType(f)
 }
 
 func TestDeepEqual(t *testing.T) {
