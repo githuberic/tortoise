@@ -95,8 +95,7 @@ func (agt *Agent) startCollectors() error {
 			err = collector.Start(ctx)
 			mutex.Lock()
 			if err != nil {
-				errs.CollectorErrors = append(errs.CollectorErrors,
-					errors.New(name+":"+err.Error()))
+				errs.CollectorErrors = append(errs.CollectorErrors, errors.New(name+":"+err.Error()))
 			}
 		}(name, collector, agt.ctx)
 	}
