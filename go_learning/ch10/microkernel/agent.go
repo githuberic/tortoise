@@ -121,7 +121,7 @@ func (agt *Agent) stopCollectors() error {
 	return errs
 }
 
-func (agt *Agent) destoryCollectors() error {
+func (agt *Agent) destroyCollectors() error {
 	var err error
 	var errs CollectorsError
 	for name, collector := range agt.collectors {
@@ -159,7 +159,7 @@ func (agt *Agent) Destroy() error {
 	if agt.state != Waiting {
 		return WrongStateError
 	}
-	return agt.destoryCollectors()
+	return agt.destroyCollectors()
 }
 
 // agent receiver
