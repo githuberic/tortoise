@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net"
@@ -18,13 +19,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	done := make(chan struct{})
+	done := make(chan string)
 	go func() {
 		io.Copy(os.Stdout, conn)
 		log.Println(">>>Done")
-		done <- struct{}{} // 指示主goroutine
+		done <- ">>>Done<<<" // 指示主goroutine
 	}()
 	mustCopy(conn, os.Stdin)
 	defer conn.Close()
-	<-done // 等待后台goroutine完成
+	fmt.Println(<-done) // 等待后台goroutine完成
 }
