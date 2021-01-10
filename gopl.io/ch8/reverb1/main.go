@@ -18,13 +18,13 @@ func echo(c net.Conn, shout string, delay time.Duration) {
 	fmt.Fprintln(c, "\t", strings.ToLower(shout))
 }
 
-func handleConn(c net.Conn) {
-	input := bufio.NewScanner(c)
+func handleConn(conn net.Conn) {
+	input := bufio.NewScanner(conn)
 	for input.Scan() {
-		echo(c, input.Text(), 1*time.Second)
+		echo(conn, input.Text(), 1*time.Second)
 	}
 	// NOTE: ignoring potential errors from input.Err()
-	c.Close()
+	defer conn.Close()
 }
 
 func main() {

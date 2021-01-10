@@ -19,6 +19,8 @@ func main() {
 		log.Fatal(err)
 	}
 	defer conn.Close()
+	// 从conn到console输出
 	go mustCopy(os.Stdout, conn)
+	// 从console输入copy到conn
 	mustCopy(conn, os.Stdin)
 }

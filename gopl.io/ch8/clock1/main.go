@@ -11,6 +11,8 @@ import (
 时钟服务器,每秒一次向客户端发送当前时间
 go build ./main
 ./main &
+
+访问的客户端 nc localhost 8000
  */
 func handleConn(conn net.Conn) {
 	defer conn.Close()
