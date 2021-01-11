@@ -20,11 +20,14 @@ func main() {
 	}
 	done := make(chan struct{})
 	go func() {
-		io.Copy(os.Stdout, conn)
+		log.Println(">>>Start")
+		if _, err := io.Copy(os.Stdout, conn); err != nil {
+			log.Println("io.copy error")
+		}
 		log.Println(">>>Done")
 		done <- struct{}{} // 指示主goroutine
 	}()
 	mustCopy(conn, os.Stdin)
-	defer conn.Close()
+	conn.Close()
 	<-done // 等待后台goroutine完成
 }
