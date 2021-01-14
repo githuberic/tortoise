@@ -19,6 +19,7 @@ func (p *Pet) SpeakTo(host string) {
 type Dog struct {
 	Pet
 }
+// Override parent method
 func (d *Dog) Speak() {
 	fmt.Print("Wang!")
 }

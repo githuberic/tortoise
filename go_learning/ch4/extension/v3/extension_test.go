@@ -15,15 +15,19 @@ func (p *Pet) SpeakTo(host string) {
 	fmt.Println(" ", host)
 }
 
-// 类似集成 匿名类型
 type Dog struct {
-	Pet
+	p *Pet
 }
+/*
 func (d *Dog) Speak() {
+	d.p.Speak()
 	fmt.Print("Wang!")
 }
-func TestDog(t *testing.T) {
+func (d *Dog) SpeakTo(host string) {
+	d.p.SpeakTo(host)
+}*/
+func TestDogV2(t *testing.T) {
 	dog := new(Dog)
-	dog.Speak()
-	dog.SpeakTo("Chao")
+	dog.p.Speak()
+	dog.p.SpeakTo("Chao")
 }

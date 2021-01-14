@@ -7,6 +7,7 @@ import (
 
 type Pet struct {
 }
+
 func (p *Pet) Speak() {
 	fmt.Print("...")
 }
@@ -19,11 +20,10 @@ func (p *Pet) SpeakTo(host string) {
 type Dog struct {
 	Pet
 }
-func (d *Dog) Speak() {
-	fmt.Print("Wang!")
-}
+
 func TestDog(t *testing.T) {
 	dog := new(Dog)
+	// 调动父类的方法
 	dog.Speak()
 	dog.SpeakTo("Chao")
 }
