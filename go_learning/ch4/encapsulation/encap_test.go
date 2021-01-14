@@ -24,20 +24,28 @@ func TestCreateEmployeeObj(t *testing.T) {
 	t.Log(e1.Id)
 	t.Log(e2)
 	t.Logf("e is %T", e)
+	// 以下2个都是地址address
+	t.Logf("e is %T", &e)
 	t.Logf("e2 is %T", e2)
 }
 
+/**
+实例方法被调用时,实例成员进行值复制copy
+ */
+/*
 func (e Employee) String() string {
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.Name))
 	return fmt.Sprintf("ID:%s-Name:%s-Age:%d", e.Id, e.Name, e.Age)
 }
-
-/*
+*/
+/**
+避免了内存拷贝
+*/
 func (e *Employee) String() string {
 	// 查看地址是否有被复制
 	fmt.Printf("Address is %x", unsafe.Pointer(&e.Name))
 	return fmt.Sprintf("ID:%s/Name:%s/Age:%d", e.Id, e.Name, e.Age)
-}*/
+}
 
 func TestStructOperations(t *testing.T) {
 	e := Employee{"0", "Bob", 20}
