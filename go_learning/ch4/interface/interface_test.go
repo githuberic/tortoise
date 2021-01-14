@@ -7,6 +7,7 @@ type Programmer interface {
 	WriteHelloWorld() string
 }
 
+
 type GoProgrammer struct {
 }
 
@@ -16,6 +17,8 @@ func (g *GoProgrammer) WriteHelloWorld() string {
 }
 
 func TestClient(t *testing.T) {
+	// 类型
+	// GoProgrammer 实现了Programmer的接口,无依赖绑定 impliement 只要方法签名一样即可
 	var p Programmer
 	p = new(GoProgrammer)
 	t.Log(p.WriteHelloWorld())
