@@ -15,14 +15,17 @@ type Shape interface {
 type Square struct {
 	len int
 }
-func (s* Square) Sides() int {
+
+func (s *Square) Sides() int {
 	return 4
 }
 
-func TestVerify(t *testing.T)  {
+func TestVerify(t *testing.T) {
 	s := Square{len: 5}
-	fmt.Printf("%d\n",s.Sides())
+	fmt.Printf("%d\n", s.Sides())
 
-
-	var _ Shape = (*Square)(nil)
+	/*
+		校验是否全部实现一个接口
+		var _ Shape = (*Square)(nil)
+	*/
 }
