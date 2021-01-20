@@ -11,6 +11,7 @@ func TestStraightPipeline(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+
 	if ret != 6 {
 		t.Fatalf("The expected is 6, but the actual is %d", ret)
 	}

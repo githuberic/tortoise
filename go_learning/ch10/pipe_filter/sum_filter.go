@@ -16,10 +16,12 @@ func (sf *SumFilter) Process(data Request) (Response, error) {
 	if !ok {
 		return nil, SumFilterWrongFormatError
 	}
+
 	ret := 0
 	for _, elem := range elems {
 		ret += elem
 	}
+
 	return ret, nil
 }
 

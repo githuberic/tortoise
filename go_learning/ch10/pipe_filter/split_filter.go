@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 var SplitFilterWrongFormatError = errors.New("input data should be string")
 
 type SplitFilter struct {
@@ -17,7 +16,8 @@ func NewSplitFilter(delimiter string) *SplitFilter {
 }
 
 func (sf *SplitFilter) Process(data Request) (Response, error) {
-	str, ok := data.(string) //检查数据格式/类型，是否可以处理
+	//检查数据格式/类型，是否可以处理
+	str, ok := data.(string)
 	if !ok {
 		return nil, SplitFilterWrongFormatError
 	}

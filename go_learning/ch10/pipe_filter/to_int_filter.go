@@ -19,6 +19,7 @@ func (tif *ToIntFilter) Process(data Request) (Response, error) {
 	if !ok {
 		return nil, ToIntFilterWrongFormatError
 	}
+
 	ret := []int{}
 	for _, part := range parts {
 		s, err := strconv.Atoi(part)
@@ -27,5 +28,6 @@ func (tif *ToIntFilter) Process(data Request) (Response, error) {
 		}
 		ret = append(ret, s)
 	}
+
 	return ret, nil
 }

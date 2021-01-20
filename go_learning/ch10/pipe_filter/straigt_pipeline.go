@@ -1,17 +1,17 @@
 package pipefilter
 
+// StraightPipeline is composed of the filters, and the filters are piled as a straigt line.
+type StraightPipeline struct {
+	Name    string
+	Filters *[]Filter
+}
+
 // NewStraightPipeline create a new StraightPipelineWithWallTime
 func NewStraightPipeline(name string, filters ...Filter) *StraightPipeline {
 	return &StraightPipeline{
 		Name:    name,
 		Filters: &filters,
 	}
-}
-
-// StraightPipeline is composed of the filters, and the filters are piled as a straigt line.
-type StraightPipeline struct {
-	Name    string
-	Filters *[]Filter
 }
 
 // Process is to process the coming data by the pipeline
