@@ -58,7 +58,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func TestVerifyV4(t *testing.T) {
-	http.HandleFunc("/v1/hello", WithServerHeader(WithAuthCookie(hello)))
+	http.HandleFunc("/bank5/hello", WithServerHeader(WithAuthCookie(hello)))
 	http.HandleFunc("/v2/hello", WithServerHeader(WithBasicAuth(hello)))
 	http.HandleFunc("/v3/hello", WithServerHeader(WithBasicAuth(WithDebugLog(hello))))
 	err := http.ListenAndServe(":8080", nil)

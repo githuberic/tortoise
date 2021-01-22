@@ -22,5 +22,6 @@ func teller() {
 }
 
 func init() {
+	// teller /goroutine限制balance变量
 	go teller() // start the monitor goroutine
 }

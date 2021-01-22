@@ -21,7 +21,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func TestVerifyV3(t *testing.T) {
-	http.HandleFunc("/v1/hello", WithServerHeader(hello))
+	http.HandleFunc("/bank5/hello", WithServerHeader(hello))
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
