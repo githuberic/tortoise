@@ -9,6 +9,7 @@ import (
 func main()  {
 	// map 存储一个键/值对集合
 	counts := make(map[string]int)
+
 	// bufio 高效的输入和输出
 	input := bufio.NewScanner(os.Stdin)
 
