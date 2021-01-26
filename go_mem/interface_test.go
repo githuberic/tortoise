@@ -10,6 +10,7 @@ func TestVerifyV3(t *testing.T) {
 	var b Binary = 200
 	// 从何而来
 	s := Stringer(b)
+
 	fmt.Println(s.String())
 }
 
