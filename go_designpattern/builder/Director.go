@@ -4,11 +4,6 @@ type Director struct {
 	builder Builder
 }
 
-
-func (d *Director) SetBuilder(builder Builder) {
-	d.builder = builder
-}
-
 func (d *Director) Create(cpu string, memory string, hardDisk string) *Computer {
 	if d.builder == nil {
 		computerBuilder := new(ComputerBuilder)
