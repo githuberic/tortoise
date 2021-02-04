@@ -76,3 +76,4 @@ func TestVerify(t *testing.T)  {
 		item.Accept(cleaner)
 	}
 }
+// https://studygolang.com/articles/26513
