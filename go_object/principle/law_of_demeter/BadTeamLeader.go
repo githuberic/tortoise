@@ -17,12 +17,12 @@ func NewBadTeamLeader(id int, name string) *BadTeamLeader {
 }
 
 // 不好的ITeamLeader实现, 同时耦合了Task和BadTeamMember两个类
-func (me *BadTeamLeader) CountOpeningTasks() int {
+func (p *BadTeamLeader) CountOpeningTasks() int {
 	tasks := LoadTaskList()
 	member := NewBadTeamMember(11, "王Member")
 	sum := member.countOpeningTasks(tasks)
 
-	fmt.Printf("%v CountOpeningTasks, got %v", me.sName, sum)
+	fmt.Printf("%v CountOpeningTasks, got %v", p.sName, sum)
 	return sum
 }
 

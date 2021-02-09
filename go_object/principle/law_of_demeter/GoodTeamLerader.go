@@ -14,10 +14,10 @@ func NewGoodTeamLeader(id int, name string) *GoodTeamLeader {
 	}
 }
 
-func (me *GoodTeamLeader) CountOpeningTasks() int {
+func (p *GoodTeamLeader) CountOpeningTasks() int {
 	member := NewGoodTeamMember(11, "王Member")
 	sum := member.countOpeningTasks()
 
-	fmt.Printf("%v CountOpeningTasks, got %v", me.sName, sum)
+	fmt.Printf("%v CountOpeningTasks, got %v", p.sName, sum)
 	return sum
 }

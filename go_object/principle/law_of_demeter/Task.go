@@ -20,12 +20,11 @@ func NewTask(id int, status TaskStatus) *Task {
 	}
 }
 
-func (me *Task) ID() int {
-	return me.iID
+func (p *Task) ID() int {
+	return p.iID
 }
-
-func (me *Task) Status() TaskStatus {
-	return me.iStatus
+func (p *Task) Status() TaskStatus {
+	return p.iStatus
 }
 
 func LoadTaskList() []*Task {

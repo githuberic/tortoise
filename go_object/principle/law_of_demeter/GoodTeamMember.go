@@ -12,7 +12,7 @@ func NewGoodTeamMember(id int, name string) *GoodTeamMember {
 	}
 }
 
-func (me *GoodTeamMember) countOpeningTasks() int {
+func (p *GoodTeamMember) countOpeningTasks() int {
 	sum := 0
 	tasks := LoadTaskList()
 

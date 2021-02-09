@@ -12,7 +12,7 @@ func NewBadTeamMember(id int, name string) *BadTeamMember {
 	}
 }
 
-func (me *BadTeamMember) countOpeningTasks(lstTasks []*Task) int {
+func (p *BadTeamMember) countOpeningTasks(lstTasks []*Task) int {
 	sum := 0
 	for _, it := range lstTasks {
 		if it.Status() == OPENING {
