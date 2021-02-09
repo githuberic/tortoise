@@ -2,10 +2,14 @@ package good
 
 import "fmt"
 
+/**
+GoodNormalBird提供对IGoodBird的基础实现
+*/
 type GoodNormalBird struct {
 	iID   int
 	sName string
 }
+
 func NewGoodNormalBird(id int, name string) *GoodNormalBird {
 	return &GoodNormalBird{
 		id,

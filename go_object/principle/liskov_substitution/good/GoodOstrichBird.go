@@ -2,6 +2,9 @@ package good
 
 import "fmt"
 
+/*
+GoodOstrichBird通过聚合GoodNormalBird实现IGoodBird接口, 通过提供Run方法实现IRunnableBird子接口
+*/
 type GoodOstrichBird struct {
 	GoodNormalBird
 }

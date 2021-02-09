@@ -2,6 +2,9 @@ package good
 
 import "fmt"
 
+/**
+GoodFlyableBird通过聚合GoodNormalBird实现IGoodBird接口, 通过提供Fly方法实现IFlyableBird子接口
+*/
 type GoodFlyableBird struct {
 	GoodNormalBird
 }

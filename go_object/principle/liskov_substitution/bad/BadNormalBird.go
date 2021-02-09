@@ -14,17 +14,17 @@ func NewBadNormalBird(id int, name string) IBadBird {
 		name,
 	}
 }
-func (me *BadNormalBird) ID() int {
-	return me.iID
+func (p *BadNormalBird) ID() int {
+	return p.iID
 }
-func (me *BadNormalBird) Name() string {
-	return me.sName
+func (p *BadNormalBird) Name() string {
+	return p.sName
 }
-func (me *BadNormalBird) Tweet() error {
-	fmt.Printf("BadNormalBird.Tweet, id=%v, name=%v\n", me.ID(), me.Name())
+func (p *BadNormalBird) Tweet() error {
+	fmt.Printf("BadNormalBird.Tweet, id=%v, name=%v\n", p.ID(), p.Name())
 	return nil
 }
-func (me *BadNormalBird) Fly() error {
-	fmt.Printf("BadNormalBird.Fly, id=%v, name=%v\n", me.ID(), me.Name())
+func (p *BadNormalBird) Fly() error {
+	fmt.Printf("BadNormalBird.Fly, id=%v, name=%v\n", p.ID(), p.Name())
 	return nil
 }
