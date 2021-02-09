@@ -1,74 +1,18 @@
 package dependence_inversion
 
 import (
-	"fmt"
 	"testing"
+	"tortoise/go_object/principle/dependence_inversion/v1/bad"
+	"tortoise/go_object/principle/dependence_inversion/v1/good"
 )
 
-type ICourse interface {
-	ID() int
-	Name() string
-	SetUser(IUser)
-	Study()
-}
+func TestVerify(t *testing.T) {
+	bu := bad.NewBadUser(1, "Tom")
+	bu.StudyGolangCourse()
 
-type IUser interface {
-	ID() int
-	Name() string
-	Study(ICourse)
-}
+	gu := good.NewGoodUser(2, "lgq")
+	gu.Study(good.NewGolangCourse())
 
-type GoodUser struct {
-	iID int
-	sName string
+	gn := good.NewGoodUser(3, "eric")
+	gn.Study(good.NewJavaCourse())
 }
-func NewGoodUser(id int, name string) IUser {
-	return &GoodUser{
-		iID: id,
-		sName: name,
-	}
-}
-
-func (me *GoodUser) ID() int {
-	return me.iID
-}
-
-func (me *GoodUser) Name() string {
-	return me.sName
-}
-func (me *GoodUser) Study(course ICourse) {
-	course.SetUser(me)
-	course.Study()
-}
-
-
-type GolangCourse struct {
-	iID int
-	sName string
-	xCurrentUser IUser
-}
-func NewGolangCourse() ICourse {
-	return &GolangCourse{
-		iID: 11,
-		sName: "golang",
-		xCurrentUser: nil,
-	}
-}
-func (me *GolangCourse) ID() int {
-	return me.iID
-}
-func (me *GolangCourse) Name() string {
-	return me.sName
-}
-func (me *GolangCourse) SetUser(user IUser) {
-	me.xCurrentUser = user
-}
-func (me *GolangCourse) Study() {
-	fmt.Printf("%v is learning %v\n", me.xCurrentUser.Name(), me.Name())
-}
-
-func TestVerify(t *testing.T)  {
-	gu := NewGoodUser(2,"lgq")
-	gu.Study(NewGolangCourse())
-}
-// https://studygolang.com/articles/33101
