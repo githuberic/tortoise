@@ -1,7 +1,7 @@
 /**
 开闭原则
 */
-package openclose
+package v1
 
 import (
 	"fmt"

@@ -1,5 +1,8 @@
 package v2
 
+/**
+golang课程类, 实现ICourse接口
+*/
 type GolangCourse struct {
 	iID    int
 	sName  string
