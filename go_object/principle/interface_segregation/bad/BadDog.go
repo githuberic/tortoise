@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+/**
+BadDog实现IBadAnimal接口.
+本来BadDog是不支持Fly()方法的, 但由于接口要求, 因此只能返回无意义错误.
+*/
 type BadDog struct {
 	iID   int
 	sName string
@@ -17,20 +21,20 @@ func NewBadDog(id int, name string) IBadAnimal {
 	}
 }
 
-func (me *BadDog) ID() int {
-	return me.iID
+func (p *BadDog) ID() int {
+	return p.iID
 }
-func (me *BadDog) Name() string {
-	return me.sName
+func (p *BadDog) Name() string {
+	return p.sName
 }
-func (me *BadDog) Eat() error {
-	fmt.Printf("%v/%v is eating\n", me.Name(), me.ID())
+func (p *BadDog) Eat() error {
+	fmt.Printf("%v/%v is eating\n", p.Name(), p.ID())
 	return nil
 }
-func (me *BadDog) Fly() error {
-	return errors.New(fmt.Sprintf("%v/%v cannot fly", me.Name(), me.ID()))
+func (p *BadDog) Fly() error {
+	return errors.New(fmt.Sprintf("%v/%v cannot fly", p.Name(), p.ID()))
 }
-func (me *BadDog) Swim() error {
-	fmt.Printf("%v/%v is swimming\n", me.Name(), me.ID())
+func (p *BadDog) Swim() error {
+	fmt.Printf("%v/%v is swimming\n", p.Name(), p.ID())
 	return nil
 }

@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+/**
+BadBird实现了IBadAnimal接口.
+BadBird是不支持Swim()的, 但由于接口要求, 只能返回无意义的错误应付.
+ */
 type BadBird struct {
 	iID   int
 	sName string
@@ -31,6 +35,6 @@ func (p *BadBird) Fly() error {
 	fmt.Printf("%v/%v is flying\n", p.Name(), p.ID())
 	return nil
 }
-func (me *BadBird) Swim() error {
-	return errors.New(fmt.Sprintf("%v/%v cannot swimming", me.Name(), me.ID()))
+func (p *BadBird) Swim() error {
+	return errors.New(fmt.Sprintf("%v/%v cannot swimming", p.Name(), p.ID()))
 }

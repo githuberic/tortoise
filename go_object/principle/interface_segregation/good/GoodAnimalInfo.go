@@ -1,13 +1,16 @@
 package good
 
+/**
+实现IGoodAnimal接口, 提供动物的id,name等基本属性
+*/
 type GoodAnimalInfo struct {
 	iID   int
 	sName string
 }
 
-func (me *GoodAnimalInfo) ID() int {
-	return me.iID
+func (p *GoodAnimalInfo) ID() int {
+	return p.iID
 }
-func (me *GoodAnimalInfo) Name() string {
-	return me.sName
+func (p *GoodAnimalInfo) Name() string {
+	return p.sName
 }
