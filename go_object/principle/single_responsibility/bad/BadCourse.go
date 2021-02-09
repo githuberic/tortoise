@@ -5,6 +5,7 @@ import "fmt"
 type IBadCourse interface {
 	ID() int
 	Name() string
+
 	Play()
 	Pause()
 	Forward(int)

@@ -34,5 +34,3 @@ func Test_SimpleResponsibility_Good(t *testing.T) {
 	fnTestGoodCourse(good.NewLiveCourse(11, "直播课"))
 	fnTestGoodCourse(good.NewReplayCourse(12, "录播课"))
 }
-
-// from https://studygolang.com/articles/33102
