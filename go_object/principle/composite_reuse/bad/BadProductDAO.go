@@ -4,6 +4,9 @@ import (
 	"tortoise/go_object/principle/composite_reuse/entity"
 )
 
+/**
+直接从BadDBConnection继承, 以获取访问数据库的能力. 继承仅仅是为了代码复用, 而不是概念复用, 因此违反了合成复用原则
+*/
 type BadProductDAO struct {
 	BadDBConnection
 }

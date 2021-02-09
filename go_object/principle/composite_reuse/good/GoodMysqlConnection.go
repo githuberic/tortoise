@@ -2,6 +2,9 @@ package good
 
 import "fmt"
 
+/**
+更好的设计, GoodMysqlConnection封装MYSQL数据库方言, 实现IGoodDBConnection接口
+ */
 type GoodMysqlConnection struct {
 	sURL string
 	sUID string

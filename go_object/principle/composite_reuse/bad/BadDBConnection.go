@@ -2,6 +2,7 @@ package bad
 
 import "fmt"
 
+// BadDBConnection用于连接数据库并执行SQL语句
 type BadDBConnection struct {
 	sURL string
 	sUID string

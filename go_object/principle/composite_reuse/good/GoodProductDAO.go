@@ -4,6 +4,9 @@ import (
 	"tortoise/go_object/principle/composite_reuse/entity"
 )
 
+/**
+更好的设计, 通过Setter方法注入数据库方言实例(遵循了合成复用原则), 实现产品的CRUD
+ */
 type GoodProductDAO struct {
 	dbConn IGoodDBConnection
 }

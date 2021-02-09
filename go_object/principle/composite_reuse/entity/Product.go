@@ -1,5 +1,6 @@
 package entity
 
+// 产品实体类
 type Product struct {
 	ID int
 	Name string
