@@ -1,4 +1,3 @@
-
 package polymorphism
 
 import (
@@ -15,18 +14,20 @@ type Person interface {
 type Student struct {
 	work string
 }
+
 //学生类实现Person接口
-func (this *Student) ToSchool() {
-	fmt.Println("Student ", this.work)
+func (p *Student) ToSchool() {
+	fmt.Println("Student ", p.work)
 }
 
 //老师类
 type Teacher struct {
 	work string
 }
+
 //老师类实现Person接口
-func (this *Teacher) ToSchool() {
-	fmt.Println("Teacher ", this.work)
+func (p *Teacher) ToSchool() {
+	fmt.Println("Teacher ", p.work)
 }
 
 //工厂模式函数，根据传入工作不同动态返回不同类型
