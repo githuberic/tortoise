@@ -10,18 +10,21 @@ type Color interface {
 
 type Red struct {
 }
+
 func (red *Red) Fill() {
 	fmt.Println("Red fill")
 }
 
 type Green struct {
 }
+
 func (s *Green) Fill() {
 	fmt.Println("Green Fill")
 }
 
 type Blue struct {
 }
+
 func (s *Blue) Fill() {
 	fmt.Println("Blue Fill")
 }

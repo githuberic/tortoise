@@ -1,29 +1,26 @@
-package facade
+package v1
 
-import (
-	"fmt"
-	"testing"
-)
+import "fmt"
 
 // CPU
 type CPU struct {
 }
 func (p *CPU) start() {
-	fmt.Println("启动CPU...")
+	fmt.Println("Start CPU")
 }
 
 // 内存
 type Memory struct {
 }
 func (p *Memory) start() {
-	fmt.Println("启动内存管理...")
+	fmt.Println("Start memory management")
 }
 
 // 硬盘
 type Disk struct {
 }
 func (p *Disk) start() {
-	fmt.Println("启动硬盘...")
+	fmt.Println("Start disk")
 }
 
 // 开机键
@@ -39,9 +36,3 @@ func (StartBtn) start() {
 	disk := &Disk{}
 	disk.start()
 }
-
-func TestVerify(t *testing.T)  {
-	startBtn := &StartBtn{}
-	startBtn.start()
-}
-// https://learnku.com/articles/33705

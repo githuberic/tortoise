@@ -12,7 +12,7 @@ func TestVerify(t *testing.T) {
 		}
 	}()
 
-	operator := NewOperatorFactory().CreateOperate("+")
+	operator := NewOperatorFactory().CreateOperate("@")
 	fmt.Printf("add result is %d\n", operator.Operate(1, 2)) //add result is 3
 	return
 }
