@@ -8,12 +8,12 @@ import (
 	"testing"
 )
 
-//AbstractBanker 抽象一个AbstractBanker业务员
+// AbstractBanker 抽象一个AbstractBanker业务员
 type AbstractBanker interface {
 	DoBusiness() //抽象的接口 业务接口
 }
 
-//实现一个架构层（基于抽象的接口来封装 ，就是在不知道具体有哪些Banker的情况下）
+// 实现一个架构层（基于抽象的接口来封装 ，就是在不知道具体有哪些Banker的情况下）
 func BankerBusiness(a AbstractBanker) {
 	a.DoBusiness() //多态的现象
 }

@@ -4,16 +4,36 @@
 - 实现开闭原则的核心思想就是面向抽象编程。
 
 # 场景
-- 某线上学习平台, 提供系列课程产品(接口: ICourse)
-- 每个课程有id,name,price等属性
-- 现在平台搞促销, golang课程(GolangCourse)打六折  
-- 如何上架打折课程? 是直接修改原golang课程的价格, 还是增加折后golang课程?
+- 某文玩电商平台, 提供系列文玩拍品(接口: IProduct)
+- 每个拍品有id,name,price等属性
+- 现在平台搞促销, 直播拍品(LivedProduct)分享10人后，可以打8折  
+- 如何上架打折拍品? 是直接修改原拍品的价格, 还是增加折后拍品?
 
 # 思路
 - 开闭原则, 就是尽量避免修改, 改以扩展的方式, 实现系统功能的增加
 - 增加"优惠折扣"接口 - IDiscount
-- 增加"折后golang课程" - DiscountedGolangCourse, 同时实现课程接口和折扣接口
-- DiscountedGolangCourse继承自GolangCourse, 添加实现折扣接口, 并覆盖ICourse.price()方法
+- 增加"折后拍品" - DiscountedProduct, 同时实现拍品接口和折扣接口
+- DiscountedProduct继承自Product, 添加实现折扣接口, 并覆盖IProduct.price()方法
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Refer
 - https://studygolang.com/articles/33100

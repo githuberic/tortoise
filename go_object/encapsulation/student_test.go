@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"testing"
+	"time"
 )
 
 type Student struct {
@@ -25,7 +26,8 @@ func NewStudentV2(name string, age int) *Student {
 }
 
 func generate() int {
-	return rand.Int() + 2021
+	rand.Seed(time.Now().UnixNano())
+	return rand.Int() 
 }
 
 func (p *Student) SetName(name string) {

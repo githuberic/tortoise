@@ -44,7 +44,7 @@ func (p *Boss) ToWork() {
 func Factory(work string) Employee {
 	switch work {
 	case "code":
-		return &Programmer{work: "coding"}
+		return &Programmer{work: "code"}
 	case "pbc":
 		return &Director{work: "plan,bpc"}
 	case "meeting":
