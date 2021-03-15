@@ -31,5 +31,17 @@
 - 调用方判断是IFlyableBird, 还是IRunnableBird
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 # Refer
 - https://studygolang.com/articles/33105
