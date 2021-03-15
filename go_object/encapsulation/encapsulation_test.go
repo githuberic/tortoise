@@ -15,12 +15,10 @@ type Employee struct {
 /**
 实例方法被调用时,实例成员进行值复制copy
 */
-/*
-func (e Employee) String() string {
+func (e Employee) StringV2() string {
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.Name))
 	return fmt.Sprintf("ID:%s-Name:%s-Age:%d", e.Id, e.Name, e.Age)
 }
-*/
 
 /**
 避免了内存拷贝
