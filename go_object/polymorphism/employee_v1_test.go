@@ -6,51 +6,69 @@ import (
 )
 
 //员工接口
-type Employee interface {
-	ToWork()
+type Employee struct {
+	name string
+	role string
 }
 
-// 程序员类
+//员工接口
+type IEmployee interface {
+	DoPBC()
+}
+
+// 工程师类
 type Programmer struct {
-	work string
+	Employee
 }
 
-// 程序员类实现Employee接口
-func (p *Programmer) ToWork() {
-	fmt.Println("Programmer ", p.work)
+func NewProgrammer(name string) *Programmer {
+	return &Programmer{Employee{name: name, role: "工程车"}}
 }
 
-// 总监类
-type Director struct {
-	work string
+// 工程师类实现Employee接口
+func (p *Programmer) DoPBC() {
+	fmt.Printf("Role=%s,name=%s,PBC=需求评审、写代码、测试、发布、处理故障...\n", p.role,p.name)
 }
 
-// 总监类实现Employee接口
-func (p *Director) ToWork() {
-	fmt.Println("Director ", p.work)
+// TM类
+type TM struct {
+	Employee
 }
 
-// 老板类
-type Boss struct {
-	work string
+func NewTM(name string) *TM {
+	return &TM{Employee{name: name, role: "TM"}}
+}
+
+// TM类实现Employee接口
+func (p *TM) DoPBC() {
+	fmt.Printf("Role=%s,name=%s,,PBC=技术方案、任务分配、开会...\n", p.role, p.name)
+}
+
+// PM类
+type PM struct {
+	Employee
+}
+
+func NewPM(name string) *PM {
+	return &PM{Employee{name: name, role: "PM"}}
 }
 
 // 老板类实现Employee接口
-func (p *Boss) ToWork() {
-	fmt.Println("Boss ", p.work)
+func (p *PM) DoPBC() {
+	fmt.Printf("Role=%s,Name=%s,PBC=开会、领取任务、监督PBC落地...\n", p.role,p.name)
 }
 
 //工厂模式函数，根据传入工作不同动态返回不同类型
-func Factory(work string) Employee {
-	switch work {
-	case "code":
-		return &Programmer{work: "code"}
-	case "pbc":
-		return &Director{work: "plan,bpc"}
-	case "meeting":
-		return &Boss{work: "meeting"}
+func Factory(role string) IEmployee {
+	switch role {
+	case "programmer":
+		return NewProgrammer("刘**")
+	case "tm":
+		return NewTM("鲁**")
+	case "pm":
+		return NewPM("王**")
 	default:
-		panic("no such profession")
+		panic("no such role")
 	}
 }
 
@@ -61,9 +79,9 @@ func TestVerifyV1(t *testing.T) {
 		}
 	}()
 
-	person := Factory("code")
-	person.ToWork() //Student  study
+	person := Factory("tm")
+	person.DoPBC()
 
-	person = Factory("meeting")
-	person.ToWork() //Teacher  teach
+	person = Factory("pm")
+	person.DoPBC()
 }
