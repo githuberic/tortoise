@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_SimpleResponsibility_Good(t *testing.T) {
+func TestVerify(t *testing.T) {
 	product := NewBadProduct("翔龙武士宝剑", 899)
 
 	iPrice := NewProductPrice(product)

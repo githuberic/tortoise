@@ -47,5 +47,3 @@ func TestGood(t *testing.T) {
 	fnTestGoodBird(good.NewGoodFlyableBird(11, "飞鸟"))
 	fnTestGoodBird(good.NewGoodOstrichBird(12, "鸵鸟"))
 }
-
-// from https://studygolang.com/articles/33105
