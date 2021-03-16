@@ -8,6 +8,8 @@ import "time"
 type IProduct interface {
 	ID() int
 	Name() string
+
+	String() string
 }
 
 /**

@@ -7,7 +7,7 @@ import (
 )
 
 func TestVerify(t *testing.T) {
-	product := NewProduct("翔龙武士宝剑", 899)
+	product := NewProduct("翔龙武士宝剑", 899.899)
 
 	iPrice := NewBrandProductV2(product, "龙泉宝剑")
 	if it, ok := iPrice.(IBrandProduct); ok {
@@ -24,5 +24,5 @@ func TestVerify(t *testing.T) {
 		it.GetInfo()
 	}
 
-	fmt.Println(product.String())
+	fmt.Println(image.String())
 }

@@ -34,6 +34,6 @@ func (p *Product) String() string {
 	var buf bytes.Buffer
 	buf.WriteString("Id=" + strconv.Itoa(p.iID))
 	buf.WriteString(",Name=" + p.sName)
-	buf.WriteString(",Price=" + fmt.Sprintf("%f", p.price))
+	buf.WriteString(",Price=" + fmt.Sprintf("%.2f", p.price))
 	return buf.String()
 }
