@@ -1,4 +1,4 @@
-package good
+package product
 
 import (
 	"bytes"
@@ -9,10 +9,16 @@ import (
 )
 
 type Product struct {
-	iID       int
-	sName     string
-	price     float32
+	iID   int
+	sName string
+	price float32
+	/**类目*/
+	category int
+
+	imageName string
 	imagePath string
+
+	keyword string
 }
 
 func NewBadProduct(name string, price float32) *Product {
@@ -37,5 +43,6 @@ func (p *Product) String() string {
 	buf.WriteString(",Name=" + p.sName)
 	buf.WriteString(",Price=" + fmt.Sprintf("%f", p.price))
 	buf.WriteString(",Image path=" + p.imagePath)
+	buf.WriteString(",Keyword=" + p.keyword)
 	return buf.String()
 }
