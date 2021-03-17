@@ -1,9 +1,8 @@
-package encapsulation
+package product
 
 import (
 	"fmt"
 	"math/rand"
-	"testing"
 	"time"
 	"unsafe"
 )
@@ -66,11 +65,4 @@ func (p *Product) String() string {
 func (e Product) StringV2() string {
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.name))
 	return fmt.Sprintf("ID:%d-Name:%s-price:%f", e.id, e.name, e.price)
-}
-
-func TestVerify(t *testing.T) {
-	t1 := NewProductV1("新疆和田玉", 18000.00)
-	fmt.Printf("Address is %x\n", unsafe.Pointer(&t1.name))
-	t.Log(t1.StringV2())
-	//fmt.Println(t1)
 }
