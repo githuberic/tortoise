@@ -1,20 +1,20 @@
-package law_of_demeter
+package good
 
 import "fmt"
 
-type GoodTeamLeader struct {
+type TeamLeader struct {
 	iID int
 	sName string
 }
 
-func NewGoodTeamLeader(id int, name string) *GoodTeamLeader {
-	return &GoodTeamLeader{
+func NewGoodTeamLeader(id int, name string) *TeamLeader {
+	return &TeamLeader{
 		id,
 		name,
 	}
 }
 
-func (p *GoodTeamLeader) CountOpeningTasks() int {
+func (p *TeamLeader) CountOpeningTasks() int {
 	member := NewGoodTeamMember(11, "王Member")
 	sum := member.countOpeningTasks()
 

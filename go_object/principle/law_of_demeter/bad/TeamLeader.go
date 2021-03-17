@@ -1,24 +1,25 @@
-package law_of_demeter
+package bad
 
 import (
 	"fmt"
+	"tortoise/go_object/principle/law_of_demeter/common"
 )
 
-type BadTeamLeader struct {
+type TeamLeader struct {
 	iID int
 	sName string
 }
 
-func NewBadTeamLeader(id int, name string) *BadTeamLeader {
-	return &BadTeamLeader{
+func NewBadTeamLeader(id int, name string) *TeamLeader {
+	return &TeamLeader{
 		id,
 		name,
 	}
 }
 
 // 不好的ITeamLeader实现, 同时耦合了Task和BadTeamMember两个类
-func (p *BadTeamLeader) CountOpeningTasks() int {
-	tasks := LoadTaskList()
+func (p *TeamLeader) CountOpeningTasks() int {
+	tasks := common.LoadTaskList()
 	member := NewBadTeamMember(11, "王Member")
 	sum := member.countOpeningTasks(tasks)
 

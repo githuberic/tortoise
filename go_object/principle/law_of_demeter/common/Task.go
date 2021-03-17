@@ -1,11 +1,16 @@
-package law_of_demeter
+package common
 
 type TaskStatus int
 
-const OPENING TaskStatus = 0
-const DONE TaskStatus = 1
-const CANCLED TaskStatus = 2
-const DENIED TaskStatus = 3
+/**
+任务状态
+*/
+const (
+	OPENING = iota
+	DONE
+	CANCLED
+	DENIED
+)
 
 // 定义任务信息, 以及加载任务清单的方法
 type Task struct {
