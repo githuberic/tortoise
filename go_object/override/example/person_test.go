@@ -1,4 +1,4 @@
-package override
+package example
 
 import "testing"
 
