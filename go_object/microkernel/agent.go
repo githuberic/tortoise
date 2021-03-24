@@ -1,10 +1,10 @@
 package microkernel
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"strings"
-	"context"
 	"sync"
 )
 
@@ -32,12 +32,15 @@ type Event struct {
 	Content string
 }
 
+
 type EventReceiver interface {
 	OnEvent(evt Event)
 }
 
 type Collector interface {
+	// 事件回传EventReceiver
 	Init(evtReceiver EventReceiver) error
+	// Collector 在不同的协程里面，启动时传递Context信息
 	Start(agtCtx context.Context) error
 	Stop() error
 	Destroy() error
@@ -48,6 +51,7 @@ type Agent struct {
 	evtBuf     chan Event
 	cancel     context.CancelFunc
 	ctx        context.Context
+	// 记录状态，防止多次重复,类似状态机，记录各个agent状态
 	state      int
 }
 
@@ -99,21 +103,25 @@ func (agt *Agent) startCollectors() error {
 			}
 		}(name, collector, agt.ctx)
 	}
+
 	if len(errs.CollectorErrors) == 0 {
 		return nil
 	}
+
 	return errs
 }
 
 func (agt *Agent) stopCollectors() error {
 	var err error
 	var errs CollectorsError
+
 	for name, collector := range agt.collectors {
 		if err = collector.Stop(); err != nil {
 			errs.CollectorErrors = append(errs.CollectorErrors,
 				errors.New(name+":"+err.Error()))
 		}
 	}
+
 	if len(errs.CollectorErrors) == 0 {
 		return nil
 	}
