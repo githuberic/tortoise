@@ -30,7 +30,8 @@ func main() {
 			log.Print(err)
 			continue
 		}
-		go handleConn(conn) // 并发处理连接
+		// 并发处理连接
+		go handleConn(conn)
 	}
 }
 

@@ -21,7 +21,9 @@ func spinner(delay time.Duration, str string) {
 
 func main() {
 	fmt.Println(">>>Start")
+	// 当main函数返回时,所有的goroutine都暴力地直接终结,然后程序退出
 	go spinner(100*time.Millisecond, ".")
+
 	const n = 45
 	finN := fib(n)
 	fmt.Printf("\rFibonacci(%d) = %d\n", n, finN)
