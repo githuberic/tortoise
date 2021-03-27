@@ -15,6 +15,7 @@ func main() {
 
 	go func() {
 		for {
+			// 接收操作的一个变种,判定通道是否关闭
 			x, ok := <-naturals
 			if !ok {
 				break
