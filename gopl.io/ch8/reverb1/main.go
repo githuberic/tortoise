@@ -23,22 +23,26 @@ func handleConn(conn net.Conn) {
 	for input.Scan() {
 		echo(conn, input.Text(), 1*time.Second)
 	}
+
 	// NOTE: ignoring potential errors from input.Err()
 	defer conn.Close()
 }
 
 func main() {
-	l, err := net.Listen("tcp", "localhost:8000")
+	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	for {
-		conn, err := l.Accept()
+		conn, err := listener.Accept()
 		if err != nil {
 			log.Print(err) // e.g., connection aborted
 			continue
 		}
+
+		// 新开另一个go routine 处理
 		go handleConn(conn)
 	}
 }
+
