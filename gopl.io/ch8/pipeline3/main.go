@@ -8,7 +8,7 @@ import "fmt"
  <-chan int 只能接收
  */
 func counter(out chan<- int) {
-	for i := 0; i <= 100; i++ {
+	for i := 0; i <= 10; i++ {
 		out <- i
 	}
 	close(out)
