@@ -18,6 +18,7 @@ func main() {
 			// 进程退出时，返回状态码1
 			os.Exit(1)
 		}
+
 		// ioutil.ReadAll 读取整个response并存入b,关闭body数据流来避免资源泄露
 		b, err := ioutil.ReadAll(resp.Body)
 		resp.Body.Close()

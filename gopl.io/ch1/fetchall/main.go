@@ -36,6 +36,12 @@ func fetch(url string, ch chan<- string) {
 	ch <- fmt.Sprintf("%.2fs %7d %s", secs, nbytes, url)
 }
 
+/*
+例如：
+./main https://golang.org https://gopl.io. https://godoc.org
+
+可以run 多个url，每个url启动一个routine
+ */
 func main() {
 	start := time.Now()
 	ch := make(chan string)
