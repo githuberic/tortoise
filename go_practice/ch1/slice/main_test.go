@@ -30,14 +30,38 @@ func TestSlice2(t *testing.T)  {
 	path := []byte("AAAA/BBBBBBBBB")
 	sepIndex := bytes.IndexByte(path,'/')
 
-	//dir1 := path[:sepIndex:sepIndex]
 	dir1 := path[:sepIndex]
 	dir2 := path[sepIndex+1:]
 
 	fmt.Println("dir1 =>",string(dir1)) //prints: dir1 => AAAA
+	t.Log("length=", len(dir1), "capacity=", cap(dir1))
 	fmt.Println("dir2 =>",string(dir2)) //prints: dir2 => BBBBBBBBB
+	t.Log("length=", len(dir2), "capacity=", cap(dir2))
 
 	dir1 = append(dir1,"suffix"...)
 	fmt.Println("dir1 =>",string(dir1)) //prints: dir1 => AAAAsuffix
+	t.Log("length=", len(dir1), "capacity=", cap(dir1))
 	fmt.Println("dir2 =>",string(dir2)) //prints: dir2 => uffixBBBB
+	t.Log("length=", len(dir2), "capacity=", cap(dir2))
+}
+
+func TestSlice3(t *testing.T)  {
+	path := []byte("AAAA/BBBBBBBBB")
+	sepIndex := bytes.IndexByte(path,'/')
+
+	fmt.Printf("Index=%d\n",sepIndex)
+
+	dir1 := path[:sepIndex:sepIndex]
+	dir2 := path[sepIndex+1:]
+
+	fmt.Println("dir1 =>",string(dir1)) //prints: dir1 => AAAA
+	t.Log("length=", len(dir1), "capacity=", cap(dir1))
+	fmt.Println("dir2 =>",string(dir2)) //prints: dir2 => BBBBBBBBB
+	t.Log("length=", len(dir2), "capacity=", cap(dir2))
+
+	dir1 = append(dir1,"suffix"...)
+	fmt.Println("dir1 =>",string(dir1)) //prints: dir1 => AAAAsuffix
+	t.Log("length=", len(dir1), "capacity=", cap(dir1))
+	fmt.Println("dir2 =>",string(dir2)) //prints: dir2 => uffixBBBB
+	t.Log("length=", len(dir2), "capacity=", cap(dir2))
 }
