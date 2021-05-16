@@ -24,8 +24,8 @@ func TestVerify(t *testing.T) {
 	s := Square{len: 5}
 	fmt.Printf("%d\n", s.Sides())
 
+	//校验是否全部实现一个接口
 	/*
-		校验是否全部实现一个接口
 		var _ Shape = (*Square)(nil)
 	*/
 }
