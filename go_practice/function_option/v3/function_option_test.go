@@ -1,7 +1,9 @@
-package function_option
+package v3
 
 import (
 	"crypto/tls"
+	"fmt"
+	"testing"
 	"time"
 )
 
@@ -37,7 +39,6 @@ func TLS(tls *tls.Config) Option {
 	}
 }
 
-
 func NewServer(addr string, port int, options ...func(*Server)) (*Server, error) {
 	srv := Server{
 		Addr:     addr,
@@ -54,6 +55,13 @@ func NewServer(addr string, port int, options ...func(*Server)) (*Server, error)
 	return &srv, nil
 }
 
-s1, _ := NewServer("localhost", 1024)
-s2, _ := NewServer("localhost", 2048, Protocol("udp"))
-s3, _ := NewServer("0.0.0.0", 8080, Timeout(300*time.Second), MaxConns(1000))
+func TestVerify(t *testing.T) {
+	s1, _ := NewServer("localhost", 1024)
+	fmt.Println(s1)
+
+	s2, _ := NewServer("localhost", 2048, Protocol("udp"))
+	fmt.Println(s2)
+
+	s3, _ := NewServer("0.0.0.0", 8080, Timeout(300*time.Second), MaxConns(1000))
+	fmt.Println(s3)
+}
