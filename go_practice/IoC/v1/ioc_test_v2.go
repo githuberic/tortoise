@@ -19,17 +19,18 @@ func (set *IntSet) Contains(x int) bool {
 }
 
 
-
-
-type UndoableIntSet struct { // Poor style
-	IntSet    // Embedding (delegation)
+type UndoableIntSet struct {
+	// Poor style
+	IntSet
+	// Embedding (delegation)
 	functions []func()
 }
 func NewUndoableIntSet() UndoableIntSet {
 	return UndoableIntSet{NewIntSet(), nil}
 }
 
-func (set *UndoableIntSet) Add(x int) { // Override
+// Override
+func (set *UndoableIntSet) Add(x int) {
 	if !set.Contains(x) {
 		set.data[x] = true
 		set.functions = append(set.functions, func() { set.Delete(x) })
@@ -38,7 +39,8 @@ func (set *UndoableIntSet) Add(x int) { // Override
 	}
 }
 
-func (set *UndoableIntSet) Delete(x int) { // Override
+// Override
+func (set *UndoableIntSet) Delete(x int) {
 	if set.Contains(x) {
 		delete(set.data, x)
 		set.functions = append(set.functions, func() { set.Add(x) })
@@ -55,7 +57,8 @@ func (set *UndoableIntSet) Undo() error {
 	index := len(set.functions) - 1
 	if function := set.functions[index]; function != nil {
 		function()
-		set.functions[index] = nil // For garbage collection
+		// For garbage collection
+		set.functions[index] = nil
 	}
 	set.functions = set.functions[:index]
 	return nil
