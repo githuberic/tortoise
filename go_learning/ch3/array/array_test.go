@@ -4,10 +4,11 @@ import "testing"
 
 func TestArrayInit(t *testing.T) {
 	var arr [3]int
+	t.Log(arr[1], arr[2])
+
 	arr1 := [4]int{1, 2, 3, 4}
 	arr3 := [...]int{1, 3, 4, 5}
 	arr1[1] = 5
-	t.Log(arr[1], arr[2])
 	t.Log(arr1, arr3)
 }
 
@@ -16,8 +17,9 @@ func TestArrayTravel(t *testing.T) {
 	for i := 0; i < len(arr3); i++ {
 		t.Log(arr3[i])
 	}
+
 	for i, v := range arr3 {
-		t.Log(i,v)
+		t.Log("index=",i,"value=",v)
 	}
 }
 
@@ -26,7 +28,7 @@ func TestArraySection(t *testing.T) {
 	// 数组切片copy
 	arr3_sec := arr3[:]
 	t.Log(arr3_sec)
+
 	arr3_copy := arr3[1:]
 	t.Log(arr3_copy)
-
 }
