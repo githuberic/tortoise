@@ -37,6 +37,7 @@ func (m *ConcurrentMap) del(index int) {
 }
 
 func (m *ConcurrentMap) find(index int) (data int) {
+	// 每次查询都要创建一个信道
 	m.ch <- func() {
 		if res, ok := m.Map[index]; ok {
 			data = res
