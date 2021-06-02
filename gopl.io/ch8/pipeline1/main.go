@@ -13,6 +13,7 @@ func main() {
 		for x := 0; x < 10; x++ {
 			naturals <- x
 		}
+		close(naturals)
 	}()
 
 	go func() {
@@ -20,6 +21,7 @@ func main() {
 			x := <-naturals
 			squares <- x * x
 		}
+		close(squares)
 	}()
 
 	// <-squares 处，期望从管道中拿到数据，而这个数据是其他goroutine协程放入管道
