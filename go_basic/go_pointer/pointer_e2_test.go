@@ -39,15 +39,15 @@ func TestVerifyV3(t *testing.T)  {
 	var v1 = uint(12)
 	var v2 = int(13)
 
-	fmt.Println(reflect.TypeOf(v1))
-	fmt.Println(reflect.TypeOf(v2))
+	fmt.Println(reflect.TypeOf(v1)) // uint
+	fmt.Println(reflect.TypeOf(v2)) // int
 
-	fmt.Println(reflect.TypeOf(&v1))
-	fmt.Println(reflect.TypeOf(&v2))
+	fmt.Println(reflect.TypeOf(&v1)) // *uint
+	fmt.Println(reflect.TypeOf(&v2)) // *int
 
 	var p = &v1
-	p = (*uint)(unsafe.Pointer(&v2))
-	fmt.Println(reflect.TypeOf(p))
+	p = (*uint)(unsafe.Pointer(&v2)) // 使用unsafe.Pointer进行类型的转换
+	*p = 18
+	fmt.Println(reflect.TypeOf(p)) // *unit
 	fmt.Println(*p)
 }
-// https://blog.csdn.net/weixin_43568400/article/details/112677881?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.no_search_link&spm=1001.2101.3001.4242

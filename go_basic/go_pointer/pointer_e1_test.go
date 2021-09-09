@@ -26,6 +26,6 @@ func TestVerifyV2(t *testing.T) {
 
 	fmt.Println(i)
 	fmt.Println(fp)
-	fmt.Println(&fp)
+	//fmt.Println(&fp)
 	fmt.Println(*fp)
 }
