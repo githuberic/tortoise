@@ -7,9 +7,9 @@ import (
 )
 
 func Change(arr []int) {
-	fmt.Printf("%p\n", &arr)
 	arr = append(arr, 6)
-	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), arr)
+	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), &arr)
+	Printf(arr)
 }
 
 /**
@@ -22,27 +22,28 @@ slice实质是一个结构体，其作为参数传递时形参实质复制了实
  */
 func TestVerify(t *testing.T) {
 	var arrA = make([]int, 0)
-	fmt.Printf("%p\n", &arrA)
-	fmt.Printf("%v %d %d %p\n", arrA, len(arrA), cap(arrA), arrA)
+	fmt.Printf("%v %d %d %p\n", arrA, len(arrA), cap(arrA), &arrA)
+	Printf(arrA)
 	Change(arrA)
-	fmt.Printf("%v %d %d %p\n", arrA, len(arrA), cap(arrA), arrA)
+	fmt.Printf("%v %d %d %p\n", arrA, len(arrA), cap(arrA), &arrA)
+	Printf(arrA)
 }
 
 
 func ChangeV2(arr []int) {
 	arr = append(arr, 6)
-	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), arr)
+	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), &arr)
 }
 /**
 其实实参中tmp[3]已经变为4，但是实参和形参内存空间中len和cap是独立的，
 形参中len修改为了4但实参中len仍然为3，所以实参中未增加元素。
  */
 func TestV2Verify(t *testing.T) {
-	var tmp = make([]int, 0, 5)
-	tmp = append(tmp, 1, 2, 3)
-	fmt.Printf("%v %d %d %p\n", tmp, len(tmp), cap(tmp), tmp)
-	ChangeV2(tmp)
-	fmt.Printf("%v %d %d %p\n", tmp, len(tmp), cap(tmp), tmp)
+	var arr = make([]int, 0, 5)
+	arr = append(arr, 1, 2, 3)
+	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), &arr)
+	ChangeV2(arr)
+	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), &arr)
 }
 
 
@@ -96,3 +97,16 @@ func TestV5Verify(t *testing.T) {
 即slice本身时，对函数中slice使用append时的修改实际是对形参新分配内存空间的修改而实参不变，
 但当直接修改slice中值时能同步修改到实参中。
  */
+
+func Printf(arr []int)  {
+	fmt.Printf("Value=>%v," +
+		"Length=%d," +
+		"Capacity=%d," +
+		"Pointer=%p," +
+		"Address=%v\n",
+		arr,
+		len(arr),
+		cap(arr),
+		&arr,
+		unsafe.Pointer(&arr))
+}
