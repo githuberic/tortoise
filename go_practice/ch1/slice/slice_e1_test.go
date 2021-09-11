@@ -6,6 +6,52 @@ import (
 	"unsafe"
 )
 
+func ChangeValue(arr ...int) {
+	arr[1] = 10
+}
+func TestVerifyE1(t *testing.T) {
+	var arr = []int{1, 2, 3}
+	t.Log("Before change,", arr, ",address=", unsafe.Pointer(&arr))
+	ChangeValue(arr...)
+	t.Log("After change,", arr, ",address=", unsafe.Pointer(&arr))
+
+	a, b, c := 1, 2, 3
+	t.Log("Before change,", b, ",address=", unsafe.Pointer(&b))
+	ChangeValue(a, b, c)
+	t.Log("After change,", b, ",address=", unsafe.Pointer(&b))
+}
+
+
+
+func appendSlice(arr []int) {
+	arr = append(arr, 44)
+}
+func appendSliceV2(arr []int) []int {
+	arr = append(arr, 444)
+	return arr
+}
+// 指针传参
+func appendSliceV3(arr *[]int) {
+	*arr = append(*arr, 4444)
+}
+func TestVerifyV2(t *testing.T) {
+	var arr = []int{1}
+	arr = append(arr, 2,3,4,5)
+
+	appendSlice(arr)
+	fmt.Printf("len: %d cap:%d data:%+v\n", len(arr), cap(arr), arr)
+
+	a2 := appendSliceV2(arr)
+	fmt.Printf("len: %d cap:%d data:%+v\n", len(a2), cap(a2), a2)
+
+	appendSliceV3(&arr)
+	fmt.Printf("len: %d cap:%d data:%+v\n", len(arr), cap(arr), arr)
+}
+
+
+
+
+
 func Change(arr []int) {
 	arr = append(arr, 6)
 	fmt.Printf("%v %d %d %p\n", arr, len(arr), cap(arr), &arr)
@@ -97,7 +143,6 @@ func TestV5Verify(t *testing.T) {
 即slice本身时，对函数中slice使用append时的修改实际是对形参新分配内存空间的修改而实参不变，
 但当直接修改slice中值时能同步修改到实参中。
  */
-
 func Printf(arr []int)  {
 	fmt.Printf("Value=>%v," +
 		"Length=%d," +
