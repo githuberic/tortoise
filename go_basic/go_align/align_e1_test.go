@@ -50,22 +50,26 @@ type D struct {
 }
 
 func TestVerifyV1(t *testing.T)  {
-	fmt.Printf("Size A: %d\n",unsafe.Sizeof(A{}))
-	fmt.Printf("Size A: %d\n",unsafe.Sizeof(B{}))
+	var a = A{}
+	fmt.Println("a占用的实际内存大小:", unsafe.Sizeof(a), "字节,结构体对齐保证:", unsafe.Alignof(a))
+	fmt.Println("a.a", unsafe.Sizeof(a.a), "字节,对齐保证:", unsafe.Alignof(a.a), ",偏移地址:", unsafe.Offsetof(a.a))
+	fmt.Println("a.b", unsafe.Sizeof(a.b), "字节,对齐保证:", unsafe.Alignof(a.b), ",偏移地址:", unsafe.Offsetof(a.b))
+	fmt.Println("a.c", unsafe.Sizeof(a.c), "字节,对齐保证:", unsafe.Alignof(a.c), ",偏移地址:", unsafe.Offsetof(a.c))
 
-	var b bool = true
-	var i int = 40
-	fmt.Println("bool-size",unsafe.Alignof(b))
-	fmt.Println("int-size",unsafe.Alignof(i))
+	var b = B{}
+	fmt.Println("b占用的实际内存大小:", unsafe.Sizeof(b), "字节,结构体对齐保证:", unsafe.Alignof(b))
+	fmt.Println("b.a", unsafe.Sizeof(b.a), "字节,对齐保证:", unsafe.Alignof(b.a), ",偏移地址:", unsafe.Offsetof(b.a))
+	fmt.Println("b.c", unsafe.Sizeof(b.c), "字节,对齐保证:", unsafe.Alignof(b.c), ",偏移地址:", unsafe.Offsetof(b.c))
+	fmt.Println("b.b", unsafe.Sizeof(b.b), "字节,对齐保证:", unsafe.Alignof(b.b), ",偏移地址:", unsafe.Offsetof(b.b))
 
 	type st struct {
 		b bool
 		i int
 	}
 	var tmp = st{}
-	fmt.Println("st.b",unsafe.Alignof(tmp.b))
-	fmt.Println("st.i",unsafe.Alignof(tmp.i))
-	fmt.Println("st",unsafe.Sizeof(tmp))
+	fmt.Println("tmp占用的实际内存大小:", unsafe.Sizeof(tmp), "字节,结构体对齐保证:", unsafe.Alignof(tmp))
+	fmt.Println("st.b", unsafe.Sizeof(tmp.b), "字节,对齐保证:", unsafe.Alignof(tmp.b), ",偏移地址:", unsafe.Offsetof(tmp.b))
+	fmt.Println("st.i", unsafe.Sizeof(tmp.i), "字节,对齐保证:", unsafe.Alignof(tmp.i), ",偏移地址:", unsafe.Offsetof(tmp.i))
 
 	var c = C{}
 	fmt.Println("c占用的实际内存大小:", unsafe.Sizeof(c), "字节,结构体对齐保证:", unsafe.Alignof(c))
@@ -81,8 +85,8 @@ func TestVerifyV1(t *testing.T)  {
 	fmt.Println("d占用的实际内存大小:", unsafe.Sizeof(d), "字节,结构体对齐保证:", unsafe.Alignof(d))
 	fmt.Println("a:", unsafe.Sizeof(d.a), "字节,字段对齐保证:", unsafe.Alignof(d.a), ",偏移地址:", unsafe.Offsetof(d.a))
 	fmt.Println("b:", unsafe.Sizeof(d.b), "字节,字段对齐保证:", unsafe.Alignof(d.b), ",偏移地址:", unsafe.Offsetof(d.b))
-	fmt.Println("c:", unsafe.Sizeof(d.c), "字节,字段对齐保证:", unsafe.Alignof(d.c), ",偏移地址:", unsafe.Offsetof(d.c))
 	fmt.Println("d:", unsafe.Sizeof(d.d), "字节,字段对齐保证:", unsafe.Alignof(d.d), ",偏移地址:", unsafe.Offsetof(d.d))
+	fmt.Println("c:", unsafe.Sizeof(d.c), "字节,字段对齐保证:", unsafe.Alignof(d.c), ",偏移地址:", unsafe.Offsetof(d.c))
 	fmt.Println("e:", unsafe.Sizeof(d.e), "字节,字段对齐保证:", unsafe.Alignof(d.e), ",偏移地址:", unsafe.Offsetof(d.e))
 	fmt.Println("f:", unsafe.Sizeof(d.f), "字节,字段对齐保证:", unsafe.Alignof(d.f), ",偏移地址:", unsafe.Offsetof(d.f))
 	fmt.Println(uintptr(unsafe.Pointer(&d)))
