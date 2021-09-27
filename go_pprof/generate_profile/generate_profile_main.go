@@ -29,7 +29,6 @@ func main() {
 	f, _ := os.OpenFile("cpu.pprof", os.O_CREATE|os.O_RDWR, 0644)
 	defer f.Close()
 	pprof.StartCPUProfile(f)
-
 	defer pprof.StopCPUProfile()
 	n := 10
 	for i := 0; i < 5; i++ {
