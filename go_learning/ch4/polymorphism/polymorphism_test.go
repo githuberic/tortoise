@@ -6,6 +6,7 @@ import (
 )
 
 type Code string
+
 type Programmer interface {
 	WriteHelloWorld() Code
 }

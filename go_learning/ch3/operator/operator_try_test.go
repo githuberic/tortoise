@@ -22,6 +22,7 @@ const (
 func TestBitClear(t *testing.T) {
 	a := 7 //0111
 	t.Log("a=,b=,c=",Readable,Writable,Executable)
+
 	// &^ 按位清零运算符
 	a = a &^ Readable
 	a = a &^ Executable

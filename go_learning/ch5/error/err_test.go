@@ -17,16 +17,17 @@ func GetFibonacci(n int) ([]int, error) {
 	if n > 100 {
 		return nil, LargerThenHundredError
 	}
-	fibList := []int{1, 1}
 
-	for i := 2; /*短变量声明 := */ i < n; i++ {
+	fibList := []int{1, 1}
+	for i := 2; i < n; i++ {
 		fibList = append(fibList, fibList[i-2]+fibList[i-1])
 	}
 	return fibList, nil
 }
 
 func TestGetFibonacci(t *testing.T) {
-	if v, err := GetFibonacci(1); err != nil {
+	p :=3
+	if v, err := GetFibonacci(p); err != nil {
 		if err == LessThanTwoError {
 			fmt.Println("It is less.")
 		}
@@ -43,6 +44,7 @@ func GetFibonacci1(str string) {
 		err  error
 		list []int
 	)
+
 	if i, err = strconv.Atoi(str); err == nil {
 		if list, err = GetFibonacci(i); err == nil {
 			fmt.Println(list)
@@ -53,6 +55,7 @@ func GetFibonacci1(str string) {
 		fmt.Println("Error", err)
 	}
 }
+
 // 推荐的方式
 func GetFibonacci2(str string) {
 	var (
@@ -60,13 +63,16 @@ func GetFibonacci2(str string) {
 		err  error
 		list []int
 	)
+
 	if i, err = strconv.Atoi(str); err != nil {
 		fmt.Println("Error", err)
 		return
 	}
+
 	if list, err = GetFibonacci(i); err != nil {
 		fmt.Println("Error", err)
 		return
 	}
+
 	fmt.Println(list)
 }
