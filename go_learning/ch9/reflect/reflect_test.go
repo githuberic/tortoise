@@ -75,6 +75,7 @@ func TestInvokeByName(t *testing.T) {
 		t.Log("Tag:format", nameField.Tag.Get("format"))
 	}
 
-	reflect.ValueOf(e).MethodByName("UpdateAge").Call([]reflect.Value{reflect.ValueOf(2)})
+	reflect.ValueOf(e).MethodByName("UpdateAge").
+		Call([]reflect.Value{reflect.ValueOf(5)})
 	t.Log("Updated Age:", e)
 }
