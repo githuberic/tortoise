@@ -8,6 +8,7 @@ func TestImplicit(t *testing.T) {
 	var a int32 = 1
 	var b int64
 	b = int64(a)
+
 	var c MyInt
 	c = MyInt(b)
 	t.Log(a, b, c)
@@ -27,6 +28,7 @@ func TestString(t *testing.T) {
 	var s string
 	t.Log("*" + s + "*") //初始化零值是“”
 	t.Log(len(s))
+
 	// 是"",空字符，而非 nil
 	if s == "" {
 		t.Log("s is null")

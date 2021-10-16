@@ -19,9 +19,19 @@ const (
 	Writable
 	Executable
 )
+
+const (
+	Male = iota
+	Female
+	Unknown
+)
+
 func TestBitClear(t *testing.T) {
 	a := 7 //0111
-	t.Log("a=,b=,c=",Readable,Writable,Executable)
+	t.Log("a=,b=,c=", Readable, Writable, Executable)
+
+	t.Log(Unknown)
+
 	// &^ 按位清零运算符
 	a = a &^ Readable
 	a = a &^ Executable

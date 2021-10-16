@@ -25,7 +25,7 @@ func TestCancel(t *testing.T) {
 				if isCancelled(ctx) {
 					break
 				}
-				time.Sleep(time.Millisecond * 5)
+				//time.Sleep(time.Millisecond * 5)
 			}
 			fmt.Println(i, "Cancelled")
 		}(i, ctx)
