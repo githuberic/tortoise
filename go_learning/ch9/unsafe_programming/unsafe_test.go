@@ -5,7 +5,6 @@ import (
 	"sync"
 	"sync/atomic"
 	"testing"
-	"time"
 	"unsafe"
 )
 
@@ -16,10 +15,14 @@ type Customer struct {
 
 func TestUnsafe(t *testing.T) {
 	i := 10
+	t.Log(unsafe.Pointer(&i))
+
 	// 危险的类型转换
 	f := *(*float64)(unsafe.Pointer(&i))
-	t.Log(unsafe.Pointer(&i))
 	t.Log(f)
+
+	g := *(*int)(unsafe.Pointer(&i))
+	t.Log(g)
 }
 
 
@@ -31,6 +34,10 @@ func TestConvert(t *testing.T) {
 	a := []int{1, 2, 3, 4}
 	b := *(*[]MyInt)(unsafe.Pointer(&a))
 	t.Log(b)
+
+	c :=10
+	c1 := *(*MyInt)(unsafe.Pointer(&c))
+	t.Log(c1)
 }
 
 //原子类型操作
@@ -50,20 +57,21 @@ func TestAtomic(t *testing.T) {
 
 	var wg sync.WaitGroup
 	writeDataFn()
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 3; i++ {
 		wg.Add(1)
 		go func() {
-			for i := 0; i < 10; i++ {
+			for i := 0; i < 3; i++ {
 				writeDataFn()
-				time.Sleep(time.Microsecond * 100)
+				//time.Sleep(time.Microsecond * 100)
 			}
 			wg.Done()
 		}()
+
 		wg.Add(1)
 		go func() {
-			for i := 0; i < 10; i++ {
+			for i := 0; i < 3; i++ {
 				readDataFn()
-				time.Sleep(time.Microsecond * 100)
+				//time.Sleep(time.Microsecond * 100)
 			}
 			wg.Done()
 		}()

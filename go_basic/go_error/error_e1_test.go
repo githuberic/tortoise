@@ -8,6 +8,8 @@ import (
 
 func f1(arg int) (int, error) {
 	if arg == 42 {
+		// errors.New 构造一个使用给定的错误信息的基本error 值。
+		// 返回错误值为 nil 代表没有错误。
 		return -1, errors.New("can't work with 42")
 	}
 	return arg + 3, nil
@@ -18,6 +20,9 @@ type argError struct {
 	param string
 }
 
+/**
+通过实现 Error 方法来自定义 error 类型是可以的。
+*/
 func (e *argError) Error() string {
 	return fmt.Sprintf("%d - %s", e.arg, e.param)
 }
@@ -46,7 +51,7 @@ func TestVerify(t *testing.T) {
 		}
 	}
 
-	_ , e := f2(42)
+	_, e := f2(42)
 	if ae, ok := e.(*argError); ok {
 		fmt.Println(ae.arg)
 		fmt.Println(ae.param)
