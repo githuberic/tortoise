@@ -1,9 +1,9 @@
 package reflect
 
 import (
+	"errors"
 	"reflect"
 	"testing"
-	"errors"
 )
 
 func TestDeepEqual(t *testing.T) {
