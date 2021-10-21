@@ -121,7 +121,7 @@ func TestV5Verify(t *testing.T) {
 */
 func Printf(arr []int) {
 	fmt.Printf("Value=>%v,"+
-		"Length=%d,"+
+		"Len=%d,"+
 		"Capacity=%d,"+
 		"Pointer=%p,"+
 		"Address=%v\n",

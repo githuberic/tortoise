@@ -42,16 +42,16 @@ func TestSlice2(t *testing.T) {
 	fmt.Printf("Index=%d\n", sepIndex)
 
 	var dir1 = path[:sepIndex]
-	fmt.Printf("Path=>%s,Dir1=>%s,Length=%d,Capacity=%d,Address=%v\n", string(path), string(dir1), len(dir1), cap(dir1), unsafe.Pointer(&dir1))
+	fmt.Printf("Path=>%s,Dir1=>%s,Len=%d,Capacity=%d,Address=%v\n", string(path), string(dir1), len(dir1), cap(dir1), unsafe.Pointer(&dir1))
 
 	var dir2 = path[sepIndex+1:]
-	fmt.Printf("Path=>%s,Dir2=>%s,Length=%d,Capacity=%d,Address=%v\n", string(path), string(dir2), len(dir2), cap(dir2), unsafe.Pointer(&dir2))
+	fmt.Printf("Path=>%s,Dir2=>%s,Len=%d,Capacity=%d,Address=%v\n", string(path), string(dir2), len(dir2), cap(dir2), unsafe.Pointer(&dir2))
 
 	dir1 = append(dir1, "suffix"...)
-	fmt.Printf("Path=>%s,Dir1=>%s,Length=%d,Capacity=%d,Address=%v\n", string(path), string(dir1), len(dir1), cap(dir1), unsafe.Pointer(&dir1))
-	fmt.Printf("Path=>%s,Dir2=>%s,Length=%d,Capacity=%d,Address=%v\n", string(path), string(dir2), len(dir2), cap(dir2), unsafe.Pointer(&dir2))
+	fmt.Printf("Path=>%s,Dir1=>%s,Len=%d,Capacity=%d,Address=%v\n", string(path), string(dir1), len(dir1), cap(dir1), unsafe.Pointer(&dir1))
+	fmt.Printf("Path=>%s,Dir2=>%s,Len=%d,Capacity=%d,Address=%v\n", string(path), string(dir2), len(dir2), cap(dir2), unsafe.Pointer(&dir2))
 }
 
 func Printf(arr []int) {
-	fmt.Printf("Value=>%v,Length=%d,Capacity=%d,Pointer=%p,Address=%v\n", arr, len(arr), cap(arr), &arr, unsafe.Pointer(&arr))
+	fmt.Printf("Value=>%v,Len=%d,Capacity=%d,Pointer=%p,Address=%v\n", arr, len(arr), cap(arr), &arr, unsafe.Pointer(&arr))
 }
