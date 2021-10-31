@@ -6,29 +6,28 @@ import (
 	"testing"
 )
 
-var tcs = []struct{ pre, in, post []int }{
+var tcs = []struct{ pre, in, post []interface{} }{
 	{
-		[]int{1, 2, 3},
-		[]int{1, 3, 2},
-		[]int{3, 2, 1},
+		[]interface{}{1, 2, 3},
+		[]interface{}{1, 3, 2},
+		[]interface{}{3, 2, 1},
 	},
 
 	{
-		[]int{1, 2, 4, 5, 3, 6, 7},
-		[]int{4, 2, 5, 1, 6, 3, 7},
-		[]int{4, 5, 2, 6, 7, 3, 1},
+		[]interface{}{1, 2, 4, 5, 3, 6, 7},
+		[]interface{}{4, 2, 5, 1, 6, 3, 7},
+		[]interface{}{4, 5, 2, 6, 7, 3, 1},
 	},
 	// 可以有多个 testCase
 }
 
-
-func PreIn2Tree(pre, in []int) *TreeNode {
-	if len(pre) != len(in) {
-		panic("preIn2Tree 中两个切片的长度不相等")
-	}
-
+func PreIn2Tree(pre, in []interface{}) *TreeNode {
 	if len(in) == 0 {
 		return nil
+	}
+
+	if len(pre) != len(in) {
+		panic("preIn2Tree 中两个切片的长度不相等")
 	}
 
 	res := &TreeNode{
@@ -47,7 +46,19 @@ func PreIn2Tree(pre, in []int) *TreeNode {
 	return res
 }
 
-func indexOf(val int, nums []int) int {
+/*
+var root TreeNode
+
+
+func init() {
+	root := NewNode(1)
+	root.Left = NewNode(2)
+	root.Right = NewNode(3)
+	root.Left.Left = NewNode(4)
+	root.Right.Right = NewNode(5)
+}*/
+
+func indexOf(val interface{}, nums []interface{}) int {
 	for i, v := range nums {
 		if v == val {
 			return i

@@ -24,7 +24,6 @@ func (this *BinaryTree) InOrderTraverse() {
 			p = tmp.right
 		}
 	}
-	fmt.Println()
 }
 
 func (this *BinaryTree) PreOrderTraverse() {
@@ -40,8 +39,6 @@ func (this *BinaryTree) PreOrderTraverse() {
 			p = s.Pop().(*Node).right
 		}
 	}
-
-	fmt.Println()
 }
 
 func (this *BinaryTree) PostOrderTraverse() {

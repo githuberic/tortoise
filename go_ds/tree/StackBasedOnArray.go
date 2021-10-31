@@ -45,6 +45,7 @@ func (this *ArrayStack) Pop() interface{} {
 	if this.IsEmpty() {
 		return nil
 	}
+
 	v := this.data[this.top]
 	this.top -= 1
 	return v
