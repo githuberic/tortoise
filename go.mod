@@ -3,6 +3,7 @@ module tortoise
 go 1.14
 
 require (
+	github.com/deckarep/golang-set v1.7.1
 	github.com/easierway/concurrent_map v1.0.0
 	github.com/gin-gonic/gin v1.7.4
 	github.com/julienschmidt/httprouter v1.3.0
