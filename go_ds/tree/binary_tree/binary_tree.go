@@ -13,13 +13,11 @@ func maxDepth(root *TreeNode) int {
 	}
 	LDepth := maxDepth(root.Left)
 	RDepth := maxDepth(root.Right)
-	return max(LDepth, RDepth)
-}
-func max(a, b int) int {
-	if a > b {
-		return a + 1
+	if LDepth > RDepth {
+		return LDepth + 1
+	} else {
+		return RDepth + 1
 	}
-	return b + 1
 }
 
 func NewNode(data interface{}) *TreeNode {
@@ -109,26 +107,29 @@ func postOrderTraversal(root *TreeNode) []interface{} {
 	return res
 }
 
+/**
+从上往下打印出二叉树的每个结点，同一层的结点按照从左到右的顺序打印。
+*/
 func levelOrderTraversal(tree *TreeNode) []interface{} {
 	if tree == nil {
 		return nil
 	}
 
 	queue := make([]*TreeNode, 0)
-	queue = append(queue, tree) // queue push
+	queue = append(queue, tree)
+
 	var res []interface{}
 
 	if len(queue) > 0 {
 		tree = queue[0]
-		res = append(res, tree.Val)
-
-		queue = queue[1:] // queue pop
 		if tree.Left != nil {
 			queue = append(queue, tree.Left)
 		}
 		if tree.Right != nil {
 			queue = append(queue, tree.Right)
 		}
+		res = append(res, tree.Val)
+		queue = queue[1:] // queue pop
 	}
 	return res
 }

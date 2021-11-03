@@ -100,3 +100,16 @@ func Test_postOrderTraversal(t *testing.T) {
 		ast.Equal(tc.post, postOrderTraversal(root), "输入:%v", tc)
 	}
 }
+
+
+// 测试
+func myTest(s []interface{}) [][]int {
+	convertor := &Convertor{}
+	root := convertor.ConvertSlice2Tree(s)
+	pre := preOrderTraversal(root)
+	in := inOrderTraversal(root)
+	post := postOrderTraversal(root)
+	return [][]int{pre, in, post}
+}
+
+

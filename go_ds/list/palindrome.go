@@ -5,7 +5,7 @@ package list
 时间复杂度：O(N)
 空间复杂度：O(N)
 */
-func isPalindrome1(l *LinkedList) bool {
+func isPalindrome1(l *SingleLinkedList) bool {
 	lLen := l.length
 	if lLen == 0 {
 		return false
@@ -38,7 +38,7 @@ func isPalindrome1(l *LinkedList) bool {
 找到链表中间节点，将前半部分转置，再从中间向左右遍历对比
 时间复杂度：O(N)
 */
-func isPalindrome2(l *LinkedList) bool {
+func isPalindrome2(l *SingleLinkedList) bool {
 	lLen := l.length
 	if lLen == 0 {
 		return false
@@ -48,7 +48,7 @@ func isPalindrome2(l *LinkedList) bool {
 	}
 	var isPalindrome = true
 	step := lLen / 2
-	var pre *ListNode = nil
+	var pre *Node = nil
 	cur := l.head.next
 	next := l.head.next.next
 	for i := uint(1); i <= step; i++ {
@@ -60,7 +60,7 @@ func isPalindrome2(l *LinkedList) bool {
 	}
 	mid := cur
 
-	var left, right *ListNode = pre, nil
+	var left, right *Node = pre, nil
 	if lLen%2 != 0 { //
 		right = mid.GetNext()
 	} else {

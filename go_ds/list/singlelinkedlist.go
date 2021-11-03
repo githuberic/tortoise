@@ -4,37 +4,43 @@ import "fmt"
 
 /*
 单链表基本操作
-author:leo
 */
-type ListNode struct {
-	next  *ListNode
+type Node struct {
+	next  *Node
 	value interface{}
 }
 
-type LinkedList struct {
-	head   *ListNode
+type SingleLinkedList struct {
+	head   *Node
 	length uint
 }
 
-func NewListNode(v interface{}) *ListNode {
-	return &ListNode{nil, v}
+func NewListNode(v interface{}) *Node {
+	return &Node{nil, v}
 }
 
-func (this *ListNode) GetNext() *ListNode {
+func (this *Node) GetNext() *Node {
 	return this.next
 }
 
-func (this *ListNode) GetValue() interface{} {
+func (this *Node) GetValue() interface{} {
 	return this.value
 }
 
-func NewLinkedList() *LinkedList {
-	return &LinkedList{NewListNode(0), 0}
+func NewLinkedList() *SingleLinkedList {
+	return &SingleLinkedList{NewListNode(0), 0}
 }
 
 //在某个节点后面插入节点
-func (this *LinkedList) InsertAfter(p *ListNode, v interface{}) bool {
-	if nil == p {
+/**
+list: 11-->22-->33
+插入节点22后面
+步骤
+1:取得22.next节点
+2:22.
+ */
+func (this *SingleLinkedList) InsertAfter(p *Node, v interface{}) bool {
+	if p == nil {
 		return false
 	}
 	newNode := NewListNode(v)
@@ -46,7 +52,7 @@ func (this *LinkedList) InsertAfter(p *ListNode, v interface{}) bool {
 }
 
 //在某个节点前面插入节点
-func (this *LinkedList) InsertBefore(p *ListNode, v interface{}) bool {
+func (this *SingleLinkedList) InsertBefore(p *Node, v interface{}) bool {
 	if nil == p || p == this.head {
 		return false
 	}
@@ -70,12 +76,12 @@ func (this *LinkedList) InsertBefore(p *ListNode, v interface{}) bool {
 }
 
 //在链表头部插入节点
-func (this *LinkedList) InsertToHead(v interface{}) bool {
+func (this *SingleLinkedList) InsertToHead(v interface{}) bool {
 	return this.InsertAfter(this.head, v)
 }
 
 //在链表尾部插入节点
-func (this *LinkedList) InsertToTail(v interface{}) bool {
+func (this *SingleLinkedList) InsertToTail(v interface{}) bool {
 	cur := this.head
 	for nil != cur.next {
 		cur = cur.next
@@ -84,7 +90,7 @@ func (this *LinkedList) InsertToTail(v interface{}) bool {
 }
 
 //通过索引查找节点
-func (this *LinkedList) FindByIndex(index uint) *ListNode {
+func (this *SingleLinkedList) FindByIndex(index uint) *Node {
 	if index >= this.length {
 		return nil
 	}
@@ -97,7 +103,7 @@ func (this *LinkedList) FindByIndex(index uint) *ListNode {
 }
 
 //删除传入的节点
-func (this *LinkedList) DeleteNode(p *ListNode) bool {
+func (this *SingleLinkedList) DeleteNode(p *Node) bool {
 	if nil == p {
 		return false
 	}
@@ -120,7 +126,7 @@ func (this *LinkedList) DeleteNode(p *ListNode) bool {
 }
 
 //打印链表
-func (this *LinkedList) Print() {
+func (this *SingleLinkedList) Print() {
 	cur := this.head.next
 	format := ""
 	for nil != cur {

@@ -133,3 +133,5 @@ func main()  {
 	// 4. block and wait
 	wm.Wait()
 }
+
+// https://github.com/vearne/worker_manager/blob/master/README_zh.md
