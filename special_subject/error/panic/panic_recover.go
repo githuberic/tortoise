@@ -3,7 +3,7 @@ package panic
 import "fmt"
 
 func badCall() {
-	panic("bad end")
+	panic("client end")
 }
 
 func test() {
@@ -15,10 +15,10 @@ func test() {
 
 	badCall()
 
-	fmt.Printf("After bad call\r\n")
+	fmt.Printf("After client call\r\n")
 }
 
-func main()  {
+func main() {
 	fmt.Printf("Calling test\r\n")
 	test()
 	fmt.Printf("Test completed\r\n")

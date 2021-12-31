@@ -41,7 +41,7 @@ func Extract(url string) ([]string, error) {
 				}
 				link, err := resp.Request.URL.Parse(a.Val)
 				if err != nil {
-					continue // ignore bad URLs
+					continue // ignore client URLs
 				}
 				links = append(links, link.String())
 			}
