@@ -1,6 +1,6 @@
 module tortoise
 
-go 1.14
+go 1.15
 
 require (
 	github.com/alecthomas/gometalinter v3.0.0+incompatible // indirect
