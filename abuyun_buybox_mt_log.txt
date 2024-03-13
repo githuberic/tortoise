@@ -1,0 +1,630 @@
+2024-03-13 15:22:28>>>阿布云(购物车)-多线程
+2024-03-13 15:22:28,Asin="B0BKFSCPDP",Error=Get "https://www.amazon.com/dp/%7B%22B0BKFSCPDP%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0BXW8QXRT",Error=Get "https://www.amazon.com/dp/%7B%22B0BXW8QXRT%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B073W6N7Y2",Error=Get "https://www.amazon.com/dp/%7B%22B073W6N7Y2%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B078H4FH31",Error=Get "https://www.amazon.com/dp/%7B%22B078H4FH31%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B088PB2858",Error=Get "https://www.amazon.com/dp/%7B%22B088PB2858%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B01L89MBGW",Error=Get "https://www.amazon.com/dp/%7B%22B01L89MBGW%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B00G6UXETW",Error=Get "https://www.amazon.com/dp/%7B%22B00G6UXETW%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B07NLH4C71",Error=Get "https://www.amazon.com/dp/%7B%22B07NLH4C71%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0C8S5F4X8",Error=Get "https://www.amazon.com/dp/%7B%22B0C8S5F4X8%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B07FF8RHCM",Error=Get "https://www.amazon.com/dp/%7B%22B07FF8RHCM%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B07DZTGSH5",Error=Get "https://www.amazon.com/dp/%7B%22B07DZTGSH5%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0000AV0A2",Error=Get "https://www.amazon.com/dp/%7B%22B0000AV0A2%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0B418QL71",Error=Get "https://www.amazon.com/dp/%7B%22B0B418QL71%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B07Q1Z8BGN",Error=Get "https://www.amazon.com/dp/%7B%22B07Q1Z8BGN%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B010Q4CQT2",Error=Get "https://www.amazon.com/dp/%7B%22B010Q4CQT2%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B07DVW1YFM",Error=Get "https://www.amazon.com/dp/%7B%22B07DVW1YFM%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B089HFR93L",Error=Get "https://www.amazon.com/dp/%7B%22B089HFR93L%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0CLKYTC2R",Error=Get "https://www.amazon.com/dp/%7B%22B0CLKYTC2R%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B09B6DL4RS",Error=Get "https://www.amazon.com/dp/%7B%22B09B6DL4RS%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B09X67PQSG",Error=Get "https://www.amazon.com/dp/%7B%22B09X67PQSG%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B08MVX27WW",Error=Get "https://www.amazon.com/dp/%7B%22B08MVX27WW%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0CLQSP19C",Error=Get "https://www.amazon.com/dp/%7B%22B0CLQSP19C%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0BZV1JXTL",Error=Get "https://www.amazon.com/dp/%7B%22B0BZV1JXTL%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0BX2CM7JT",Error=Get "https://www.amazon.com/dp/%7B%22B0BX2CM7JT%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0CMQDCFP3",Error=Get "https://www.amazon.com/dp/%7B%22B0CMQDCFP3%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B09B3RHXQ4",Error=Get "https://www.amazon.com/dp/%7B%22B09B3RHXQ4%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B00029WYVW",Error=Get "https://www.amazon.com/dp/%7B%22B00029WYVW%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B0CBMQ2ZS5",Error=Get "https://www.amazon.com/dp/%7B%22B0CBMQ2ZS5%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:28,Asin="B08TWCLFR1",Error=Get "https://www.amazon.com/dp/%7B%22B08TWCLFR1%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B08PZK35N1",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B08PZK35N1"BuyBox=
+2024-03-13 15:22:29,Asin="B01MR55ZGX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B01MR55ZGX"BuyBox=
+2024-03-13 15:22:29,Asin="B08D99SVYW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B08D99SVYW"BuyBox=
+2024-03-13 15:22:29,Asin="B09FTGCTNY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B09FTGCTNY"BuyBox=
+2024-03-13 15:22:29,Asin="B07JZT4CWV",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B07JZT4CWV"BuyBox=
+2024-03-13 15:22:29,Asin="B0C3R27FZV",Error=Get "https://www.amazon.com/dp/%7B%22B0C3R27FZV%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B092L925J4",Error=Get "https://www.amazon.com/dp/%7B%22B092L925J4%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B0BW7BGKFV",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B0BW7BGKFV"BuyBox=
+2024-03-13 15:22:29,Asin="B09YP8V6JY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B09YP8V6JY"BuyBox=
+2024-03-13 15:22:29,Asin="B0CQ5257BX",Error=Get "https://www.amazon.com/dp/%7B%22B0CQ5257BX%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B07HT55W19",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B07HT55W19"BuyBox=
+2024-03-13 15:22:29,Asin="B0CCDVNM24",Error=Get "https://www.amazon.com/dp/%7B%22B0CCDVNM24%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B0BKSNT1NX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B0BKSNT1NX"BuyBox=
+2024-03-13 15:22:29,Asin="B0CPTF3V84",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B0CPTF3V84"BuyBox=
+2024-03-13 15:22:29,Asin="B0B1WR5K89",Error=Get "https://www.amazon.com/dp/%7B%22B0B1WR5K89%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B0CR6HYBW7",Error=Get "https://www.amazon.com/dp/%7B%22B0CR6HYBW7%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B07FFNVL4G",Error=Get "https://www.amazon.com/dp/%7B%22B07FFNVL4G%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B073VDZWGC",Error=Get "https://www.amazon.com/dp/%7B%22B073VDZWGC%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B07YZDN66N",Error=Get "https://www.amazon.com/dp/%7B%22B07YZDN66N%22%7D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:22:29,Asin="B0000CAQ81",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B0000CAQ81"BuyBox=
+2024-03-13 15:22:29,Asin="B07WBWP348",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:29,Asin="B07WBWP348"BuyBox=
+2024-03-13 15:22:30,Asin="B014CVQMRM",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B014CVQMRM"BuyBox=
+2024-03-13 15:22:30,Asin="B07BBVC7JQ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B07BBVC7JQ"BuyBox=
+2024-03-13 15:22:30,Asin="B09MLR5RVW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B07Y5KDPWG",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B09MLR5RVW"BuyBox=
+2024-03-13 15:22:30,Asin="B07Y5KDPWG"BuyBox=
+2024-03-13 15:22:30,Asin="B0BTQB428S",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B07W4SGTCF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B0BTQB428S"BuyBox=
+2024-03-13 15:22:30,Asin="B07W4SGTCF"BuyBox=
+2024-03-13 15:22:30,Asin="B0CDP8BDKF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B0CDP8BDKF"BuyBox=
+2024-03-13 15:22:30,Asin="B0C9KJNPQM",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B0C9KJNPQM"BuyBox=
+2024-03-13 15:22:30,Asin="B07FMMXN8J",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:30,Asin="B07FMMXN8J"BuyBox=
+2024-03-13 15:22:31,Asin="B07MCM7PH9",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:31,Asin="B07MCM7PH9"BuyBox=
+2024-03-13 15:22:31,Asin="B0769SCXZ2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:31,Asin="B0769SCXZ2"BuyBox=
+2024-03-13 15:22:31,Asin="B0CS5N8P42",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:31,Asin="B0CS5N8P42"BuyBox=
+2024-03-13 15:22:31,Asin="B08ZD2DSC6",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:31,Asin="B08ZD2DSC6"BuyBox=
+2024-03-13 15:22:31,Asin="B00PAUP3J8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:31,Asin="B00PAUP3J8"BuyBox=
+2024-03-13 15:22:32,Asin="B0CJBXH4ZY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B0CJBXH4ZY"BuyBox=
+2024-03-13 15:22:32,Asin="B01GDQHJIA",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B01GDQHJIA"BuyBox=
+2024-03-13 15:22:32,Asin="B072M3CHCB",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B072M3CHCB"BuyBox=
+2024-03-13 15:22:32,Asin="B0BX66VBPD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B07QCQPJ5M",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B0BX66VBPD"BuyBox=
+2024-03-13 15:22:32,Asin="B07QCQPJ5M"BuyBox=
+2024-03-13 15:22:32,Asin="B07R3ZCCLD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B07R3ZCCLD"BuyBox=
+2024-03-13 15:22:32,Asin="B07RQQBQ98",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B07RQQBQ98"BuyBox=
+2024-03-13 15:22:32,Asin="B00MFTOMLC",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:32,Asin="B00MFTOMLC"BuyBox=
+2024-03-13 15:22:33,Asin="B0CVJJFZZB",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B0CVJJFZZB"BuyBox=
+2024-03-13 15:22:33,Asin="B08962MFDH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B08962MFDH"BuyBox=
+2024-03-13 15:22:33,Asin="B0BBTYGZJ5",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B0BBTYGZJ5"BuyBox=
+2024-03-13 15:22:33,Asin="B0B8YBZ1GF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B0B8YBZ1GF"BuyBox=
+2024-03-13 15:22:33,Asin="B0BSTN87K7",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B0BTYBT73Z",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:33,Asin="B0BSTN87K7"BuyBox=
+2024-03-13 15:22:33,Asin="B0BTYBT73Z"BuyBox=
+2024-03-13 15:22:34,Asin="B00CK96JEA",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B00CK96JEA"BuyBox=
+2024-03-13 15:22:34,Asin="B0B3JMQZQC",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0B3JMQZQC"BuyBox=
+2024-03-13 15:22:34,Asin="B0BX9CJ88S",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0BX9CJ88S"BuyBox=
+2024-03-13 15:22:34,Asin="B0BG94BSZ6",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0BG94BSZ6"BuyBox=
+2024-03-13 15:22:34,Asin="B07XQ8492F",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B07XQ8492F"BuyBox=
+2024-03-13 15:22:34,Asin="B0BN5TT88W",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0BN5TT88W"BuyBox=
+2024-03-13 15:22:34,Asin="B08H8C485N",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B08H8C485N"BuyBox=
+2024-03-13 15:22:34,Asin="B000FBPAUO",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B000FBPAUO"BuyBox=
+2024-03-13 15:22:34,Asin="B0B3LKGR6D",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0B3LKGR6D"BuyBox=
+2024-03-13 15:22:34,Asin="B0CW35G2BK",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0CW35G2BK"BuyBox=
+2024-03-13 15:22:34,Asin="B0C5RWG6LV",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B0C5RWG6LV"BuyBox=
+2024-03-13 15:22:34,Asin="B08GY7PQPX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:34,Asin="B08GY7PQPX"BuyBox=
+2024-03-13 15:22:35,Asin="B0BR8446Y1",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:35,Asin="B0BR8446Y1"BuyBox=
+2024-03-13 15:22:35,Asin="B0CP7N99D9",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:35,Asin="B0CP7N99D9"BuyBox=
+2024-03-13 15:22:35,Asin="B0036ZSCCE",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:35,Asin="B0036ZSCCE"BuyBox=
+2024-03-13 15:22:35,Asin="B07DB45MPS",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:35,Asin="B07DB45MPS"BuyBox=
+2024-03-13 15:22:35,Asin="B0BV4W8B6L",Error=Get "https://www.amazon.com/dp/%7B%22B0BV4W8B6L%22%7D?th=1&psc=1": EOF请求失败
+2024-03-13 15:22:36,Asin="B08MZPR43J",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B08MZPR43J"BuyBox=
+2024-03-13 15:22:36,Asin="B0BPKNFW1C",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B0BPKNFW1C"BuyBox=
+2024-03-13 15:22:36,Asin="B07RLHLN1F",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B07RLHLN1F"BuyBox=
+2024-03-13 15:22:36,Asin="B0C5593MZS",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B0C4T6GKQW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B0C5593MZS"BuyBox=
+2024-03-13 15:22:36,Asin="B0C4T6GKQW"BuyBox=
+2024-03-13 15:22:36,Asin="B09BZXJ111",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B09BZXJ111"BuyBox=
+2024-03-13 15:22:36,Asin="B07D5NBJB3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:36,Asin="B07D5NBJB3"BuyBox=
+2024-03-13 15:22:37,Asin="B003P8PDN8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:37,Asin="B00FRE524I",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:37,Asin="B003P8PDN8"BuyBox=
+2024-03-13 15:22:37,Asin="B00FRE524I"BuyBox=
+2024-03-13 15:22:37,Asin="B07D9S3XCQ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:37,Asin="B07D9S3XCQ"BuyBox=
+2024-03-13 15:22:38,Asin="B08QBPJFKB",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:38,Asin="B08QBPJFKB"BuyBox=
+2024-03-13 15:22:38,Asin="B0CDQQVS9J",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:38,Asin="B0CDQQVS9J"BuyBox=
+2024-03-13 15:22:38,Asin="B081HY1VGB",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:38,Asin="B081HY1VGB"BuyBox=
+2024-03-13 15:22:39,Asin="B09GXMRJM4",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B07MTJ6TX4",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B09GXMRJM4"BuyBox=
+2024-03-13 15:22:39,Asin="B07MTJ6TX4"BuyBox=
+2024-03-13 15:22:39,Asin="B00INPEGG8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B00INPEGG8"BuyBox=
+2024-03-13 15:22:39,Asin="B0B3CFM8D9",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B0B3CFM8D9"BuyBox=
+2024-03-13 15:22:39,Asin="B085HY5MPH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B096K2RWG8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B093PT7YP3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:39,Asin="B085HY5MPH"BuyBox=
+2024-03-13 15:22:39,Asin="B096K2RWG8"BuyBox=
+2024-03-13 15:22:39,Asin="B093PT7YP3"BuyBox=
+2024-03-13 15:22:40,Asin="B09GLLTYD7",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B09GLLTYD7"BuyBox=
+2024-03-13 15:22:40,Asin="B07D7Z6793",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B07D7Z6793"BuyBox=
+2024-03-13 15:22:40,Asin="B016NC7NN0",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B004IARENO",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B016NC7NN0"BuyBox=
+2024-03-13 15:22:40,Asin="B004IARENO"BuyBox=
+2024-03-13 15:22:40,Asin="B0C1S11VK1",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B0C1S11VK1"BuyBox=
+2024-03-13 15:22:40,Asin="B097YXQSLY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:40,Asin="B097YXQSLY"BuyBox=
+2024-03-13 15:22:41,Asin="B0CH9YJW1V",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0CH9YJW1V"BuyBox=
+2024-03-13 15:22:41,Asin="B0BGSFMTTG",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0BGSFMTTG"BuyBox=
+2024-03-13 15:22:41,Asin="B0CQJVTNGS",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0CQJVTNGS"BuyBox=
+2024-03-13 15:22:41,Asin="B0BQ8DLVHL",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0BQ8DLVHL"BuyBox=
+2024-03-13 15:22:41,Asin="B0CKS4FD35",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0CKS4FD35"BuyBox=
+2024-03-13 15:22:41,Asin="B0CC2M6TD3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:41,Asin="B0CC2M6TD3"BuyBox=
+2024-03-13 15:22:42,Asin="B0CN3R45V8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B0CN3R45V8"BuyBox=
+2024-03-13 15:22:42,Asin="B0BXBJGZGY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B0BXBJGZGY"BuyBox=
+2024-03-13 15:22:42,Asin="B088R9WYLY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B088R9WYLY"BuyBox=
+2024-03-13 15:22:42,Asin="B09CZ8F7VH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B0CNSHDN69",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B0C57FKHJQ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B09CZ8F7VH"BuyBox=
+2024-03-13 15:22:42,Asin="B0CNSHDN69"BuyBox=
+2024-03-13 15:22:42,Asin="B00YT76O64",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B0C57FKHJQ"BuyBox=
+2024-03-13 15:22:42,Asin="B00YT76O64"BuyBox=
+2024-03-13 15:22:42,Asin="B01MXIRFGG",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:42,Asin="B01MXIRFGG"BuyBox=
+2024-03-13 15:22:43,Asin="B09ZVB4KZH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B08VWBZL1V",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B09ZVB4KZH"BuyBox=
+2024-03-13 15:22:43,Asin="B08VWBZL1V"BuyBox=
+2024-03-13 15:22:43,Asin="B07SLSRQWC",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B07SLSRQWC"BuyBox=
+2024-03-13 15:22:43,Asin="B09V7MZTF8",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B09V7MZTF8"BuyBox=
+2024-03-13 15:22:43,Asin="B0CQ8T9RR3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B0CQ8T9RR3"BuyBox=
+2024-03-13 15:22:43,Asin="B0BT9JJF8N",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:43,Asin="B0BT9JJF8N"BuyBox=
+2024-03-13 15:22:44,Asin="B0B4BJN9NY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B0B4BJN9NY"BuyBox=
+2024-03-13 15:22:44,Asin="B07YD8CQMR",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B07YD8CQMR"BuyBox=
+2024-03-13 15:22:44,Asin="B09LVGHL83",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B09LVGHL83"BuyBox=
+2024-03-13 15:22:44,Asin="B095Z37346",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B095Z37346"BuyBox=
+2024-03-13 15:22:44,Asin="B08N67T459",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B08N67T459"BuyBox=
+2024-03-13 15:22:44,Asin="B07WN1MHK4",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:44,Asin="B07WN1MHK4"BuyBox=
+2024-03-13 15:22:45,Asin="B08QJHXMCP",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B08QJHXMCP"BuyBox=
+2024-03-13 15:22:45,Asin="B0B211BD98",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B0B211BD98"BuyBox=
+2024-03-13 15:22:45,Asin="B0BWMV7J2Q",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B0BWMV7J2Q"BuyBox=
+2024-03-13 15:22:45,Asin="B07NXXFKH3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B07NXXFKH3"BuyBox=
+2024-03-13 15:22:45,Asin="B087JJ1JHX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B087JJ1JHX"BuyBox=
+2024-03-13 15:22:45,Asin="B083PZDQ72",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B083PZDQ72"BuyBox=
+2024-03-13 15:22:45,Asin="B0BKRKB6KW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:45,Asin="B0BKRKB6KW"BuyBox=
+2024-03-13 15:22:46,Asin="B08SQQYZK2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:46,Asin="B08SQQYZK2"BuyBox=
+2024-03-13 15:22:46,Asin="B0BKFNPW2R",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:46,Asin="B0BKFNPW2R"BuyBox=
+2024-03-13 15:22:47,Asin="B09X19QJ7T",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:47,Asin="B09X19QJ7T"BuyBox=
+2024-03-13 15:22:47,Asin="B07MTP2HY5",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:47,Asin="B07MTP2HY5"BuyBox=
+2024-03-13 15:22:47,Asin="B093BX63JH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:47,Asin="B093BX63JH"BuyBox=
+2024-03-13 15:22:47,Asin="B0CB3WVDVZ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:47,Asin="B0CB3WVDVZ"BuyBox=
+2024-03-13 15:22:47,Asin="B0CRQNCWSP",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:47,Asin="B0CRQNCWSP"BuyBox=
+2024-03-13 15:22:48,Asin="B000C05QK2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:48,Asin="B000C05QK2"BuyBox=
+2024-03-13 15:22:48,Asin="B09S6SV4PM",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:48,Asin="B09S6SV4PM"BuyBox=
+2024-03-13 15:22:48,Asin="B0BYYLCDZ2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:48,Asin="B0BYYLCDZ2"BuyBox=
+2024-03-13 15:22:49,Asin="B00009XNSX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:49,Asin="B00009XNSX"BuyBox=
+2024-03-13 15:22:49,Asin="B09YQYVYQG",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:49,Asin="B09YQYVYQG"BuyBox=
+2024-03-13 15:22:50,Asin="B08WLS6BR3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:50,Asin="B08WLS6BR3"BuyBox=
+2024-03-13 15:22:50,Asin="B09TP7ZRFF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:50,Asin="B09TP7ZRFF"BuyBox=
+2024-03-13 15:22:50,Asin="B007TS0F7E",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:50,Asin="B007TS0F7E"BuyBox=
+2024-03-13 15:22:51,Asin="B08X175R5X",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:51,Asin="B074J82Q19",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:51,Asin="B074J82Q19"BuyBox=
+2024-03-13 15:22:51,Asin="B08X175R5X"BuyBox=
+2024-03-13 15:22:51,Asin="B0966GKC26",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:51,Asin="B0966GKC26"BuyBox=
+2024-03-13 15:22:51,Asin="B0CN73WYXZ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:51,Asin="B0CN73WYXZ"BuyBox=
+2024-03-13 15:22:51,Asin="B0CPGFWCTR",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:51,Asin="B0CPGFWCTR"BuyBox=
+2024-03-13 15:22:52,Asin="B009PPJDPE",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:52,Asin="B0CW1ZM9SZ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:52,Asin="B009PPJDPE"BuyBox=
+2024-03-13 15:22:52,Asin="B0CW1ZM9SZ"BuyBox=
+2024-03-13 15:22:52,Asin="B06XBJ5GHQ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:52,Asin="B06XBJ5GHQ"BuyBox=
+2024-03-13 15:22:52,Asin="B01IYBVIL6",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:52,Asin="B01IYBVIL6"BuyBox=
+2024-03-13 15:22:52,Asin="B0C9ZSLRFX",Error=Get "https://www.amazon.com/dp/%7B%22B0C9ZSLRFX%22%7D?th=1&psc=1": EOF请求失败
+2024-03-13 15:22:52,Asin="B0CRNGGGGL",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:52,Asin="B0CRNGGGGL"BuyBox=
+2024-03-13 15:22:53,Asin="B0C1BQY8GT",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:53,Asin="B0C1BQY8GT"BuyBox=
+2024-03-13 15:22:53,Asin="B0002D0E1K",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:53,Asin="B0002D0E1K"BuyBox=
+2024-03-13 15:22:54,Asin="B01J1GVE58",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:54,Asin="B01J1GVE58"BuyBox=
+2024-03-13 15:22:54,Asin="B07KJ9JWNX",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:54,Asin="B07KJ9JWNX"BuyBox=
+2024-03-13 15:22:54,Asin="B097HQYP3P",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:54,Asin="B097HQYP3P"BuyBox=
+2024-03-13 15:22:54,Asin="B09V7L4F8C",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:54,Asin="B09V7L4F8C"BuyBox=
+2024-03-13 15:22:55,Asin="B000GTUWEE",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:55,Asin="B000GTUWEE"BuyBox=
+2024-03-13 15:22:55,Asin="B08VNF9C5L",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:55,Asin="B08VNF9C5L"BuyBox=
+2024-03-13 15:22:55,Asin="B0C6TBF5B9",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:55,Asin="B0C6TBF5B9"BuyBox=
+2024-03-13 15:22:55,Asin="B07H4GPVRZ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:55,Asin="B07H4GPVRZ"BuyBox=
+2024-03-13 15:22:55,Asin="B09NQNSHDD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:55,Asin="B09NQNSHDD"BuyBox=
+2024-03-13 15:22:56,Asin="B07J15P2N3",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:56,Asin="B07J15P2N3"BuyBox=
+2024-03-13 15:22:56,Asin="B0CKSFGND7",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:56,Asin="B0CKSFGND7"BuyBox=
+2024-03-13 15:22:56,Asin="B08RSPKTZK",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:56,Asin="B08RSPKTZK"BuyBox=
+2024-03-13 15:22:56,Asin="B0CCR7DD68",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:56,Asin="B0CCR7DD68"BuyBox=
+2024-03-13 15:22:56,Asin="B086GBVDSK",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:56,Asin="B086GBVDSK"BuyBox=
+2024-03-13 15:22:57,Asin="B0BF9LS6RF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B0BF9LS6RF"BuyBox=
+2024-03-13 15:22:57,Asin="B0BTTX17WB",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B0BTTX17WB"BuyBox=
+2024-03-13 15:22:57,Asin="B083WHFK2K",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B083WHFK2K"BuyBox=
+2024-03-13 15:22:57,Asin="B0CQW4H6QQ",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B08FXSNWTC",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B0CQW4H6QQ"BuyBox=
+2024-03-13 15:22:57,Asin="B08FXSNWTC"BuyBox=
+2024-03-13 15:22:57,Asin="B06Y3QNDK2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B06Y3QNDK2"BuyBox=
+2024-03-13 15:22:57,Asin="B005UN73ZW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B005UN73ZW"BuyBox=
+2024-03-13 15:22:57,Asin="B0BZHZNHQR",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B0BZHZNHQR"BuyBox=
+2024-03-13 15:22:57,Asin="B08817PDGY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:57,Asin="B08817PDGY"BuyBox=
+2024-03-13 15:22:58,Asin="B010EAPLGS",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B010EAPLGS"BuyBox=
+2024-03-13 15:22:58,Asin="B0C2YVCK7V",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B0C2YVCK7V"BuyBox=
+2024-03-13 15:22:58,Asin="B07GYRJV59",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B07GYRJV59"BuyBox=
+2024-03-13 15:22:58,Asin="B0CGT6Q6BF",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B0CGT6Q6BF"BuyBox=
+2024-03-13 15:22:58,Asin="B0BZFX5XVR",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B0BZFX5XVR"BuyBox=
+2024-03-13 15:22:58,Asin="B09L8DN3VD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:58,Asin="B09L8DN3VD"BuyBox=
+2024-03-13 15:22:59,Asin="B07W68VTDR",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B07W68VTDR"BuyBox=
+2024-03-13 15:22:59,Asin="B07QY7ZWVW",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B07QY7ZWVW"BuyBox=
+2024-03-13 15:22:59,Asin="B08KT5JZQT",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B08KT5JZQT"BuyBox=
+2024-03-13 15:22:59,Asin="B0932R3R98",Error=Get "https://www.amazon.com/dp/%7B%22B0932R3R98%22%7D?th=1&psc=1": unexpected EOF请求失败
+2024-03-13 15:22:59,Asin="B0C9QKNJH9",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B09895X3R2",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B0C9QKNJH9"BuyBox=
+2024-03-13 15:22:59,Asin="B09895X3R2"BuyBox=
+2024-03-13 15:22:59,Asin="B0CB7995K3",Error=Get "https://www.amazon.com/dp/%7B%22B0CB7995K3%22%7D?th=1&psc=1": EOF请求失败
+2024-03-13 15:22:59,Asin="B0BHRBXM2V",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:22:59,Asin="B0BHRBXM2V"BuyBox=
+2024-03-13 15:23:00,Asin="B07F774F66",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:00,Asin="B07F774F66"BuyBox=
+2024-03-13 15:23:01,Asin="B0B2PB4M2D",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:01,Asin="B0B2PB4M2D"BuyBox=
+2024-03-13 15:23:01,Asin="B094FDW6F5",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:01,Asin="B094FDW6F5"BuyBox=
+2024-03-13 15:23:01,Asin="B09ZPHF85Y",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:01,Asin="B09ZPHF85Y"BuyBox=
+2024-03-13 15:23:01,Asin="B0002SQTAA",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:01,Asin="B0002SQTAA"BuyBox=
+2024-03-13 15:23:01,Asin="B0C8WN349L",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:01,Asin="B0C8WN349L"BuyBox=
+2024-03-13 15:23:02,Asin="B0BM92D2D1",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B0B4PT76YY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B0BM92D2D1"BuyBox=
+2024-03-13 15:23:02,Asin="B0B4PT76YY"BuyBox=
+2024-03-13 15:23:02,Asin="B08CLRSJWM",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B08CLRSJWM"BuyBox=
+2024-03-13 15:23:02,Asin="B0BW9HSNGD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B0BW9HSNGD"BuyBox=
+2024-03-13 15:23:02,Asin="B0CS6V6XKK",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B0CS6V6XKK"BuyBox=
+2024-03-13 15:23:02,Asin="B082KQVP74",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:02,Asin="B082KQVP74"BuyBox=
+2024-03-13 15:23:03,Asin="B0BLJRQ4XY",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:03,Asin="B0BLJRQ4XY"BuyBox=
+2024-03-13 15:23:03,Asin="B007E2RULO",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:03,Asin="B007E2RULO"BuyBox=
+2024-03-13 15:23:03,Asin="B0BFBCJC8H",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:03,Asin="B0BFBCJC8H"BuyBox=
+2024-03-13 15:23:03,Asin="B0095ZPR54",Error=Get "https://www.amazon.com/dp/%7B%22B0095ZPR54%22%7D?th=1&psc=1": unexpected EOF请求失败
+2024-03-13 15:23:03,Asin="B0BTZ2G89M",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:03,Asin="B0BTZ2G89M"BuyBox=
+2024-03-13 15:23:03,Asin="B07SJBX9WD",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:03,Asin="B07SJBX9WD"BuyBox=
+2024-03-13 15:23:04,Asin="B09B18CNJH",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:04,Asin="B09B18CNJH"BuyBox=
+2024-03-13 15:23:04,Asin="B0BXYG9K9H",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:04,Asin="B0BXYG9K9H"BuyBox=
+2024-03-13 15:23:04,Asin="B085WZWVX7",Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:23:04,Asin="B085WZWVX7"BuyBox=
+2024-03-13 15:29:43>>>阿布云(购物车)-多线程
+2024-03-13 15:31:29>>>阿布云(购物车)-多线程
+2024-03-13 15:34:03>>>阿布云(购物车)-多线程
+2024-03-13 15:35:08>>>阿布云(购物车)-多线程
+2024-03-13 15:35:08,Asin=B08PZK35N1,Error=Get "https://www.amazon.com/dp/B08PZK35N1?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B00CK96JEA,Error=Get "https://www.amazon.com/dp/B00CK96JEA?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B078H4FH31,Error=Get "https://www.amazon.com/dp/B078H4FH31?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B08GY7PQPX,Error=Get "https://www.amazon.com/dp/B08GY7PQPX?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B000FBPAUO,Error=Get "https://www.amazon.com/dp/B000FBPAUO?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B093PT7YP3,Error=Get "https://www.amazon.com/dp/B093PT7YP3?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B07NLH4C71,Error=Get "https://www.amazon.com/dp/B07NLH4C71?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:08,Asin=B010Q4CQT2,Error=Get "https://www.amazon.com/dp/B010Q4CQT2?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07DZTGSH5,Error=Get "https://www.amazon.com/dp/B07DZTGSH5?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B08MZPR43J,Error=Get "https://www.amazon.com/dp/B08MZPR43J?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B09YP8V6JY,Error=Get "https://www.amazon.com/dp/B09YP8V6JY?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B00G6UXETW,Error=Get "https://www.amazon.com/dp/B00G6UXETW?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07WBWP348,Error=Get "https://www.amazon.com/dp/B07WBWP348?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CC2M6TD3,Error=Get "https://www.amazon.com/dp/B0CC2M6TD3?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B08D99SVYW,Error=Get "https://www.amazon.com/dp/B08D99SVYW?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07HT55W19,Error=Get "https://www.amazon.com/dp/B07HT55W19?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0C8S5F4X8,Error=Get "https://www.amazon.com/dp/B0C8S5F4X8?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07DVW1YFM,Error=Get "https://www.amazon.com/dp/B07DVW1YFM?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CLKYTC2R,Error=Get "https://www.amazon.com/dp/B0CLKYTC2R?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B089HFR93L,Error=Get "https://www.amazon.com/dp/B089HFR93L?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B09B6DL4RS,Error=Get "https://www.amazon.com/dp/B09B6DL4RS?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07Q1Z8BGN,Error=Get "https://www.amazon.com/dp/B07Q1Z8BGN?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B09X67PQSG,Error=Get "https://www.amazon.com/dp/B09X67PQSG?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0BZV1JXTL,Error=Get "https://www.amazon.com/dp/B0BZV1JXTL?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B09B3RHXQ4,Error=Get "https://www.amazon.com/dp/B09B3RHXQ4?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B08MVX27WW,Error=Get "https://www.amazon.com/dp/B08MVX27WW?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CMQDCFP3,Error=Get "https://www.amazon.com/dp/B0CMQDCFP3?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B00029WYVW,Error=Get "https://www.amazon.com/dp/B00029WYVW?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CLQSP19C,Error=Get "https://www.amazon.com/dp/B0CLQSP19C?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0BX2CM7JT,Error=Get "https://www.amazon.com/dp/B0BX2CM7JT?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CPTF3V84,Error=Get "https://www.amazon.com/dp/B0CPTF3V84?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CBMQ2ZS5,Error=Get "https://www.amazon.com/dp/B0CBMQ2ZS5?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07FF8RHCM,Error=Get "https://www.amazon.com/dp/B07FF8RHCM?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0B1WR5K89,Error=Get "https://www.amazon.com/dp/B0B1WR5K89?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CCDVNM24,Error=Get "https://www.amazon.com/dp/B0CCDVNM24?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CQ5257BX,Error=Get "https://www.amazon.com/dp/B0CQ5257BX?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CR6HYBW7,Error=Get "https://www.amazon.com/dp/B0CR6HYBW7?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0B3JMQZQC,Error=Get "https://www.amazon.com/dp/B0B3JMQZQC?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07FFNVL4G,Error=Get "https://www.amazon.com/dp/B07FFNVL4G?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0095ZPR54,Error=Get "https://www.amazon.com/dp/B0095ZPR54?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0036ZSCCE,Error=Get "https://www.amazon.com/dp/B0036ZSCCE?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0B3LKGR6D,Error=Get "https://www.amazon.com/dp/B0B3LKGR6D?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0CP7N99D9,Error=Get "https://www.amazon.com/dp/B0CP7N99D9?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0C5RWG6LV,Error=Get "https://www.amazon.com/dp/B0C5RWG6LV?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07D5NBJB3,Error=Get "https://www.amazon.com/dp/B07D5NBJB3?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0BR8446Y1,Error=Get "https://www.amazon.com/dp/B0BR8446Y1?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07DB45MPS,Error=Get "https://www.amazon.com/dp/B07DB45MPS?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B00FRE524I,Error=Get "https://www.amazon.com/dp/B00FRE524I?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07RLHLN1F,Error=Get "https://www.amazon.com/dp/B07RLHLN1F?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0C57FKHJQ,Error=Get "https://www.amazon.com/dp/B0C57FKHJQ?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0BPKNFW1C,Error=Get "https://www.amazon.com/dp/B0BPKNFW1C?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0BW7BGKFV,Error=Get "https://www.amazon.com/dp/B0BW7BGKFV?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0000CAQ81,Error=Get "https://www.amazon.com/dp/B0000CAQ81?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B014CVQMRM,Error=Get "https://www.amazon.com/dp/B014CVQMRM?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B07BBVC7JQ,Error=Get "https://www.amazon.com/dp/B07BBVC7JQ?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B00MFTOMLC,Error=Get "https://www.amazon.com/dp/B00MFTOMLC?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:09,Asin=B0C3R27FZV,Error=Get "https://www.amazon.com/dp/B0C3R27FZV?th=1&psc=1": Too Many Requests请求失败
+2024-03-13 15:35:12,Asin=B0BN5TT88W,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:12,Asin=B0BN5TT88WBuyBox=
+2024-03-13 15:35:12,Asin=B0CJBXH4ZY,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:12,Asin=B0CJBXH4ZYBuyBox=
+2024-03-13 15:35:12,Asin=B07RQQBQ98,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:12,Asin=B07RQQBQ98BuyBox=
+2024-03-13 15:35:12,Asin=B073VDZWGC,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:12,Asin=B073VDZWGCBuyBox=
+2024-03-13 15:35:13,Asin=B01MR55ZGX,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B01MR55ZGXBuyBox=
+2024-03-13 15:35:13,Asin=B01L89MBGW,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B01L89MBGWBuyBox=
+2024-03-13 15:35:13,Asin=B07JZT4CWV,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B07JZT4CWVBuyBox=
+2024-03-13 15:35:13,Asin=B073W6N7Y2,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B073W6N7Y2BuyBox=
+2024-03-13 15:35:13,Asin=B0CVJJFZZB,Error=Get "https://www.amazon.com/dp/B0CVJJFZZB?th=1&psc=1": EOF请求失败
+2024-03-13 15:35:13,Asin=B0BXW8QXRT,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B0BXW8QXRTBuyBox=
+2024-03-13 15:35:13,Asin=B092L925J4,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B07YZDN66N,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:13,Asin=B092L925J4BuyBox=
+2024-03-13 15:35:13,Asin=B07YZDN66NBuyBox=
+2024-03-13 15:35:15,Asin=B09MLR5RVW,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:15,Asin=B09MLR5RVWBuyBox=
+2024-03-13 15:35:16,Asin=B0769SCXZ2,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:16,Asin=B0769SCXZ2BuyBox=
+2024-03-13 15:35:16,Asin=B0C4T6GKQW,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:16,Asin=B0C4T6GKQWBuyBox=
+2024-03-13 15:35:17,Asin=B0CDP8BDKF,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:17,Asin=B01MXIRFGG,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:17,Asin=B01MXIRFGGBuyBox=
+2024-03-13 15:35:17,Asin=B0CDP8BDKFBuyBox=
+2024-03-13 15:35:17,Asin=B07Y5KDPWG,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:17,Asin=B07Y5KDPWGBuyBox=
+2024-03-13 15:35:18,Asin=B0CS5N8P42,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:18,Asin=B0CS5N8P42BuyBox=
+2024-03-13 15:35:18,Asin=B07XQ8492F,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:18,Asin=B07XQ8492FBuyBox=
+2024-03-13 15:35:19,Asin=B0BBTYGZJ5,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:19,Asin=B0BBTYGZJ5BuyBox=
+2024-03-13 15:35:21,Asin=B088PB2858,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:21,Asin=B088PB2858BuyBox=
+2024-03-13 15:35:21,Asin=B09BZXJ111,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:21,Asin=B09BZXJ111BuyBox=
+2024-03-13 15:35:21,Asin=B09GLLTYD7,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:21,Asin=B09GLLTYD7BuyBox=
+2024-03-13 15:35:21,Asin=B07D9S3XCQ,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:21,Asin=B07D9S3XCQBuyBox=
+2024-03-13 15:35:22,Asin=B003P8PDN8,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:22,Asin=B003P8PDN8BuyBox=
+2024-03-13 15:35:22,Asin=B096K2RWG8,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:22,Asin=B096K2RWG8BuyBox=
+2024-03-13 15:35:22,Asin=B081HY1VGB,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:22,Asin=B081HY1VGBBuyBox=
+2024-03-13 15:35:24,Asin=B004IARENO,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:24,Asin=B004IARENOBuyBox=
+2024-03-13 15:35:25,Asin=B00YT76O64,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:25,Asin=B00YT76O64BuyBox=
+2024-03-13 15:35:26,Asin=B0895JNZB9,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:26,Asin=B0895JNZB9BuyBox=
+2024-03-13 15:35:27,Asin=B09GXMRJM4,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:27,Asin=B09GXMRJM4BuyBox=
+2024-03-13 15:35:27,Asin=B0CQJVTNGS,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:27,Asin=B0CQJVTNGSBuyBox=
+2024-03-13 15:35:27,Asin=B00PAUP3J8,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:27,Asin=B00PAUP3J8BuyBox=
+2024-03-13 15:35:28,Asin=B074J82Q19,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:28,Asin=B074J82Q19BuyBox=
+2024-03-13 15:35:29,Asin=B08962MFDH,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:29,Asin=B08962MFDHBuyBox=
+2024-03-13 15:35:29,Asin=B0B211BD98,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:29,Asin=B0B211BD98BuyBox=
+2024-03-13 15:35:30,Asin=B07R3ZCCLD,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:30,Asin=B07R3ZCCLDBuyBox=
+2024-03-13 15:35:30,Asin=B07MCM7PH9,Error=Failed to create directory: mkdir /amazon: read-only file system写入响应到文件失败
+2024-03-13 15:35:30,Asin=B07MCM7PH9BuyBox=
+2024-03-13 15:40:05,>>>阿布云(购物车)-多线程
+2024-03-13 15:41:43,>>>阿布云(购物车)-多线程
+2024-03-13 15:42:15,>>>阿布云(购物车)-多线程
+2024-03-13 15:42:36,>>>阿布云(购物车)-多线程
+2024-03-13 15:42:43,Asin=B078H4FH31,BuyBox=
+2024-03-13 15:42:47,Asin=B09B6DL4RS,BuyBox=
+2024-03-13 15:42:53,Asin=B07W4SGTCF,BuyBox=
+2024-03-13 15:42:56,Asin=B07MTJ6TX4,BuyBox=
+2024-03-13 15:43:17,Asin=B09FTGCTNY,Error=unexpected EOF,读取响应失败
+2024-03-13 15:43:23,Asin=B0B3CFM8D9,Error=Get "https://www.amazon.com/dp/B0B3CFM8D9?th=1&psc=1": status code 608,请求失败
+2024-03-13 15:43:26,Asin=B0B2PB4M2D,BuyBox=
+2024-03-13 15:43:30,Asin=B0BV4W8B6L,BuyBox=
+2024-03-13 15:43:33,Asin=B0BKFSCPDP,BuyBox=
+2024-03-13 15:43:39,Asin=B0BKSNT1NX,BuyBox=
+2024-03-13 15:56:08,>>>阿布云(购物车)-多线程
+2024-03-13 15:56:12,Asin=B00PAUP3J8,BuyBox=
+2024-03-13 15:56:13,Asin=B00CK96JEA,BuyBox=
+2024-03-13 15:57:01,Asin=B07W4SGTCF,Error=unexpected EOF,读取响应失败
+2024-03-13 15:57:07,Asin=B000FBPAUO,Error=unexpected EOF,读取响应失败
+2024-03-13 15:57:07,Asin=B08962MFDH,BuyBox=
+2024-03-13 15:57:10,Asin=B07R3ZCCLD,BuyBox=
+2024-03-13 15:57:11,Asin=B01MR55ZGX,BuyBox=
+2024-03-13 15:57:16,Asin=B073W6N7Y2,BuyBox=
+2024-03-13 15:57:19,Asin=B0000AV0A2,BuyBox=
+2024-03-13 15:57:23,Asin=B07JZT4CWV,BuyBox=
+2024-03-13 15:57:26,Asin=B08PZK35N1,BuyBox=
+2024-03-13 15:57:34,Asin=B07WBWP348,BuyBox=
+2024-03-13 15:57:36,Asin=B08ZD2DSC6,BuyBox=
+2024-03-13 15:57:39,Asin=B00G6UXETW,BuyBox=
+2024-03-13 15:57:41,Asin=B078H4FH31,BuyBox=
+2024-03-13 15:57:44,Asin=B010Q4CQT2,BuyBox=
+2024-03-13 15:57:47,Asin=B0B418QL71,BuyBox=
+2024-03-13 15:57:47,Asin=B08GY7PQPX,BuyBox=
+2024-03-13 15:57:52,Asin=B01L89MBGW,BuyBox=
+2024-03-13 15:57:54,Asin=B0966GKC26,BuyBox=
+2024-03-13 15:57:56,Asin=B074J82Q19,BuyBox=
+2024-03-13 15:57:57,Asin=B0BN5TT88W,BuyBox=
+2024-03-13 20:47:16,>>>阿布云(购物车)-多线程
+2024-03-13 20:47:24,Asin=B08PZK35N1,BuyBox= Buy Now 
+2024-03-13 20:47:28,Asin=B0B418QL71,BuyBox= Buy Now 
+2024-03-13 20:47:58,Asin=B08MZPR43J,Error=unexpected EOF,读取响应失败
+2024-03-13 20:47:58,Asin=B0966GKC26,Error=unexpected EOF,读取响应失败
+2024-03-13 20:48:02,Asin=B078H4FH31,Error=Get "https://www.amazon.com/dp/B078H4FH31?th=1&psc=1": EOF,请求失败
+2024-03-13 20:48:02,Asin=B00G6UXETW,BuyBox= Buy Now 
+2024-03-13 20:48:06,Asin=B08962MFDH,BuyBox= Buy Now 
+2024-03-13 20:48:09,Asin=B000FBPAUO,BuyBox= Buy Now 
+2024-03-13 20:48:10,Asin=B072M3CHCB,Error=Get "https://www.amazon.com/dp/B072M3CHCB?th=1&psc=1": unexpected EOF,请求失败
+2024-03-13 20:48:11,Asin=B07WBWP348,Error=unexpected EOF,读取响应失败
+2024-03-13 20:48:16,Asin=B00PAUP3J8,BuyBox= Buy Now 
+2024-03-13 20:48:20,Asin=B08MVX27WW,BuyBox= Buy Now 
+2024-03-13 20:48:24,Asin=B0C5593MZS,BuyBox= Buy Now 
+2024-03-13 20:48:29,Asin=B088PB2858,BuyBox= Buy Now 
+2024-03-13 20:48:35,Asin=B00CK96JEA,BuyBox=
+2024-03-13 20:48:37,Asin=B09FTGCTNY,BuyBox= Buy Now 
