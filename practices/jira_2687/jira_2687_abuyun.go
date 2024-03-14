@@ -29,10 +29,36 @@ type Cookie struct {
 	FailCount int
 }
 
-var (
+type Stat struct {
 	successCount uint64
-	failCount    uint64
-)
+	totalCount   uint64
+	mu           sync.Mutex
+}
+
+func (s *Stat) incrSuccess() {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+
+	s.successCount++
+}
+func (s *Stat) incrTotal() {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+
+	s.totalCount++
+}
+func (s *Stat) getSuccess() uint64 {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+
+	return s.successCount
+}
+func (s *Stat) getTotal() uint64 {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+
+	return s.totalCount
+}
 
 func readCookie() []Cookie {
 	var cookieList []Cookie
@@ -110,7 +136,7 @@ func setHeaders(cookie string) http.Header {
 	return headers
 }
 
-func writeLogging(asin string, er error, content string) error {
+func writeLogging(asin string, er error, content string, stat *Stat) error {
 	file, err := os.OpenFile(resultsFile, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
 	if err != nil {
 		return fmt.Errorf("Failed to open file: %w", err)
@@ -121,9 +147,17 @@ func writeLogging(asin string, er error, content string) error {
 	now := time.Now()
 	formattedTime := now.Format("2006-01-02 15:04:05")
 	contentNew += formattedTime
+	//contentNew += fmt.Sprintf(",GId=%d", GetGoid())
+
 	if asin != "" {
 		contentNew += ",Asin=" + asin
 	}
+
+	if stat != nil {
+		contentNew += fmt.Sprintf(",Index=%d", stat.getTotal())
+		contentNew += fmt.Sprintf(",Success=%d", stat.getSuccess())
+	}
+
 	if er != nil {
 		contentNew += ",Error=" + er.Error()
 	}
@@ -190,32 +224,33 @@ func selCookie(cookies []Cookie) Cookie {
 	return cookieReturn
 }
 
-func fetch(asin string, cookies []Cookie, wg *sync.WaitGroup) {
+func fetch(asin string, cookies []Cookie, wg *sync.WaitGroup, stat *Stat) {
 	defer wg.Done()
 
+	stat.incrTotal()
 	if asin != "" {
 		asin = strings.ReplaceAll(asin, "\"", "")
 	}
 	url := getAmzProdUrl(asin)
 	cookie := selCookie(cookies)
-	var headers = setHeaders(cookie.Value)
 
 	transport, err := getProxy()
 	if err != nil {
-		writeLogging(asin, err, "Error parsing proxy URL")
+		writeLogging(asin, err, "Error parsing proxy URL", stat)
 	}
 
 	client := &http.Client{Transport: transport}
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		writeLogging(asin, err, "创建请求失败")
+		writeLogging(asin, err, "创建请求失败", stat)
 		return
 	}
-	req.Header = headers
+
+	req.Header = setHeaders(cookie.Value)
 	resp, err := client.Do(req)
 	if err != nil {
 		cookie.FailCount++
-		writeLogging(asin, err, "请求失败")
+		writeLogging(asin, err, "请求失败", stat)
 		return
 	}
 
@@ -223,20 +258,23 @@ func fetch(asin string, cookies []Cookie, wg *sync.WaitGroup) {
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		cookie.FailCount++
-		writeLogging(asin, err, "读取响应失败")
+		writeLogging(asin, err, "读取响应失败", stat)
 		return
 	}
 
 	err = saveResponse(asin, string(body))
 	if err != nil {
-		writeLogging(asin, err, "写入响应到文件失败")
+		writeLogging(asin, err, "写入响应到文件失败", stat)
 	}
 
 	buyboxText, err := parseElement(string(body))
 	if err != nil {
-		writeLogging(asin, err, "解析响应失败")
+		writeLogging(asin, err, "解析响应失败", stat)
 	} else {
-		writeLogging(asin, nil, "BuyBox="+buyboxText)
+		if len(strings.TrimSpace(buyboxText)) > 0 {
+			stat.incrSuccess()
+		}
+		writeLogging(asin, nil, "BuyBox="+buyboxText, stat)
 	}
 }
 
@@ -265,19 +303,17 @@ func main() {
 	// 设置随机数种子以获取随机结果（通常在程序开始时设置一次即可）
 	rand.Seed(time.Now().UnixNano())
 
-	writeLogging("", nil, ">>>阿布云(购物车)-多线程")
+	stat := &Stat{successCount: 0, totalCount: 0}
+	writeLogging("", nil, ">>>阿布云(购物车)-多线程", stat)
 
 	var prods = readProd()
 	var cookies = readCookie()
-
-	successCount := 0
-	failCount := 0
 
 	// 使用一个WaitGroup等待所有协程完成
 	var wg sync.WaitGroup
 
 	// 设置并发数为10
-	concurrency := 3
+	concurrency := 5
 	// 信号量控制并发数
 	semaphore := make(chan struct{}, concurrency)
 
@@ -286,12 +322,10 @@ func main() {
 		go func(asin string) {
 			semaphore <- struct{}{}        // 拉低信号量，确保不超过设定的并发数
 			defer func() { <-semaphore }() // 处理完后释放信号量
-			fetch(asin, cookies, &wg)
+			fetch(asin, cookies, &wg, stat)
 		}(val)
 	}
 
 	// 等待所有任务完成
 	wg.Wait()
-
-	fmt.Printf("成功请求次数：%d, 失败请求次数：%d", successCount, failCount)
 }
