@@ -1,0 +1,23 @@
+Database:
+  DBType: mysql
+  UserName: root
+  Password: root_mysql
+  Host: 127.0.0.1:3307
+  DBName: gorm_exec_db
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+Server:
+  RunMode: debug
+  HttpPort: 8090
+  ReadTimeout: 60
+  WriteTimeout: 60
+Redis:
+  Addr: 127.0.0.1:6379
+  Password: lgq@123456
+  DB: 0
+  DialConnectionTimeout: 1000
+  DialReadTimeout: 500
+  DialWriteTimeout: 1000
+  IdleTimeout: 300000

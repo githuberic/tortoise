@@ -1,0 +1,7 @@
+name: go-viper
+db:
+  name: data_center
+  host: 127.0.0.1:3307
+  username: root
+  password: root_mysql
+  charset: utf8mb4
